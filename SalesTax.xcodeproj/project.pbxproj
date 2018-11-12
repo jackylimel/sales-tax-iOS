@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0639A61BCA370C3360A9142B /* Pods_SalesTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0DC2E282A4ABE78EFD7159 /* Pods_SalesTax.framework */; };
 		8507066F219A236F0055BCAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8507066E219A236F0055BCAF /* AppDelegate.swift */; };
 		85070671219A236F0055BCAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85070670219A236F0055BCAF /* ViewController.swift */; };
 		85070674219A236F0055BCAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85070672219A236F0055BCAF /* Main.storyboard */; };
 		85070676219A23700055BCAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85070675219A23700055BCAF /* Assets.xcassets */; };
 		85070679219A23700055BCAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85070677219A23700055BCAF /* LaunchScreen.storyboard */; };
 		85070684219A23700055BCAF /* SalesTaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85070683219A23700055BCAF /* SalesTaxTests.swift */; };
+		8DCA0BA6BA717E3CCF25FFD0 /* Pods_SalesTax_SalesTaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577FD59B0853A3EF1CBCAC7A /* Pods_SalesTax_SalesTaxTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0DC2E282A4ABE78EFD7159 /* Pods_SalesTax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesTax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE94018F65A6369C4760FC3 /* Pods-SalesTax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax.release.xcconfig"; sourceTree = "<group>"; };
+		577FD59B0853A3EF1CBCAC7A /* Pods_SalesTax_SalesTaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesTax_SalesTaxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F63774A490BCF75DBFDA328 /* Pods-SalesTax-SalesTaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax-SalesTaxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax-SalesTaxTests/Pods-SalesTax-SalesTaxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		80B5EF9B1878E09A97B7BF13 /* Pods-SalesTax-SalesTaxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax-SalesTaxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax-SalesTaxTests/Pods-SalesTax-SalesTaxTests.release.xcconfig"; sourceTree = "<group>"; };
 		8507066B219A236F0055BCAF /* SalesTax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalesTax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8507066E219A236F0055BCAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85070670219A236F0055BCAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,7 @@
 		8507067F219A23700055BCAF /* SalesTaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalesTaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85070683219A23700055BCAF /* SalesTaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxTests.swift; sourceTree = "<group>"; };
 		85070685219A23700055BCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07127EB9E2E4FBF1672AF05 /* Pods-SalesTax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0639A61BCA370C3360A9142B /* Pods_SalesTax.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DCA0BA6BA717E3CCF25FFD0 /* Pods_SalesTax_SalesTaxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22A0B19D58BCFC8CA2BA84BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C07127EB9E2E4FBF1672AF05 /* Pods-SalesTax.debug.xcconfig */,
+				2DE94018F65A6369C4760FC3 /* Pods-SalesTax.release.xcconfig */,
+				5F63774A490BCF75DBFDA328 /* Pods-SalesTax-SalesTaxTests.debug.xcconfig */,
+				80B5EF9B1878E09A97B7BF13 /* Pods-SalesTax-SalesTaxTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		85070662219A236F0055BCAF = {
 			isa = PBXGroup;
 			children = (
 				8507066D219A236F0055BCAF /* SalesTax */,
 				85070682219A23700055BCAF /* SalesTaxTests */,
 				8507066C219A236F0055BCAF /* Products */,
+				22A0B19D58BCFC8CA2BA84BA /* Pods */,
+				B461980343B0B2955D1A8DE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +119,15 @@
 			path = SalesTaxTests;
 			sourceTree = "<group>";
 		};
+		B461980343B0B2955D1A8DE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A0DC2E282A4ABE78EFD7159 /* Pods_SalesTax.framework */,
+				577FD59B0853A3EF1CBCAC7A /* Pods_SalesTax_SalesTaxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85070688219A23700055BCAF /* Build configuration list for PBXNativeTarget "SalesTax" */;
 			buildPhases = (
+				6F0ACD00797BDB8E850EF972 /* [CP] Check Pods Manifest.lock */,
 				85070667219A236F0055BCAF /* Sources */,
 				85070668219A236F0055BCAF /* Frameworks */,
 				85070669219A236F0055BCAF /* Resources */,
+				663AF04A599C353A826D4C99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8507068B219A23700055BCAF /* Build configuration list for PBXNativeTarget "SalesTaxTests" */;
 			buildPhases = (
+				DB6F40AC05A6074B0C158520 /* [CP] Check Pods Manifest.lock */,
 				8507067B219A23700055BCAF /* Sources */,
 				8507067C219A23700055BCAF /* Frameworks */,
 				8507067D219A23700055BCAF /* Resources */,
+				2D8D4B170821C1CCC5BD47ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +227,149 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D8D4B170821C1CCC5BD47ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SalesTax-SalesTaxTests/Pods-SalesTax-SalesTaxTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalesTax-SalesTaxTests/Pods-SalesTax-SalesTaxTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		663AF04A599C353A826D4C99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F0ACD00797BDB8E850EF972 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SalesTax-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB6F40AC05A6074B0C158520 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SalesTax-SalesTaxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		85070667219A236F0055BCAF /* Sources */ = {
@@ -358,6 +537,7 @@
 		};
 		85070689219A23700055BCAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C07127EB9E2E4FBF1672AF05 /* Pods-SalesTax.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +555,7 @@
 		};
 		8507068A219A23700055BCAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE94018F65A6369C4760FC3 /* Pods-SalesTax.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,8 +573,8 @@
 		};
 		8507068C219A23700055BCAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F63774A490BCF75DBFDA328 /* Pods-SalesTax-SalesTaxTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SalesTaxTests/Info.plist;
@@ -412,8 +593,8 @@
 		};
 		8507068D219A23700055BCAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80B5EF9B1878E09A97B7BF13 /* Pods-SalesTax-SalesTaxTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SalesTaxTests/Info.plist;
