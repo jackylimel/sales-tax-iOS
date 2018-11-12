@@ -14,6 +14,7 @@
 		85070676219A23700055BCAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85070675219A23700055BCAF /* Assets.xcassets */; };
 		85070679219A23700055BCAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85070677219A23700055BCAF /* LaunchScreen.storyboard */; };
 		85070684219A23700055BCAF /* SalesTaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85070683219A23700055BCAF /* SalesTaxTests.swift */; };
+		8539AD04219A2A240027E6DB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8539AD03219A2A240027E6DB /* R.generated.swift */; };
 		8DCA0BA6BA717E3CCF25FFD0 /* Pods_SalesTax_SalesTaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577FD59B0853A3EF1CBCAC7A /* Pods_SalesTax_SalesTaxTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		8507067F219A23700055BCAF /* SalesTaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalesTaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85070683219A23700055BCAF /* SalesTaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxTests.swift; sourceTree = "<group>"; };
 		85070685219A23700055BCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8539AD03219A2A240027E6DB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		C07127EB9E2E4FBF1672AF05 /* Pods-SalesTax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 		8507066D219A236F0055BCAF /* SalesTax */ = {
 			isa = PBXGroup;
 			children = (
+				8539AD03219A2A240027E6DB /* R.generated.swift */,
 				8507066E219A236F0055BCAF /* AppDelegate.swift */,
 				85070670219A236F0055BCAF /* ViewController.swift */,
 				85070672219A236F0055BCAF /* Main.storyboard */,
@@ -136,6 +139,7 @@
 			buildConfigurationList = 85070688219A23700055BCAF /* Build configuration list for PBXNativeTarget "SalesTax" */;
 			buildPhases = (
 				6F0ACD00797BDB8E850EF972 /* [CP] Check Pods Manifest.lock */,
+				8539AD00219A29000027E6DB /* Generete R.swift */,
 				85070667219A236F0055BCAF /* Sources */,
 				85070668219A236F0055BCAF /* Frameworks */,
 				85070669219A236F0055BCAF /* Resources */,
@@ -347,6 +351,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8539AD00219A29000027E6DB /* Generete R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generete R.swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/SalesTax\"\n";
+		};
 		DB6F40AC05A6074B0C158520 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,6 +400,7 @@
 			files = (
 				85070671219A236F0055BCAF /* ViewController.swift in Sources */,
 				8507066F219A236F0055BCAF /* AppDelegate.swift in Sources */,
+				8539AD04219A2A240027E6DB /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
