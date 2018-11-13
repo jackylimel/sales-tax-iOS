@@ -16,21 +16,35 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 4 storyboards.
   struct storyboard {
+    /// Storyboard `Entrance`.
+    static let entrance = _R.storyboard.entrance()
+    /// Storyboard `Home`.
+    static let home = _R.storyboard.home()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
-    /// Storyboard `Main`.
-    static let main = _R.storyboard.main()
+    /// Storyboard `Settings`.
+    static let settings = _R.storyboard.settings()
+    
+    /// `UIStoryboard(name: "Entrance", bundle: ...)`
+    static func entrance(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.entrance)
+    }
+    
+    /// `UIStoryboard(name: "Home", bundle: ...)`
+    static func home(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.home)
+    }
     
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
     }
     
-    /// `UIStoryboard(name: "Main", bundle: ...)`
-    static func main(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.main)
+    /// `UIStoryboard(name: "Settings", bundle: ...)`
+    static func settings(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.settings)
     }
     
     fileprivate init() {}
@@ -56,8 +70,50 @@ struct _R: Rswift.Validatable {
   
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
+      try entrance.validate()
       try launchScreen.validate()
-      try main.validate()
+      try home.validate()
+      try settings.validate()
+    }
+    
+    struct entrance: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = EntranceViewController
+      
+      let bundle = R.hostingBundle
+      let entranceViewController = StoryboardViewControllerResource<EntranceViewController>(identifier: "EntranceViewController")
+      let name = "Entrance"
+      
+      func entranceViewController(_: Void = ()) -> EntranceViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: entranceViewController)
+      }
+      
+      static func validate() throws {
+        if #available(iOS 11.0, *) {
+        }
+        if _R.storyboard.entrance().entranceViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'entranceViewController' could not be loaded from storyboard 'Entrance' as 'EntranceViewController'.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct home: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = HomeViewController
+      
+      let bundle = R.hostingBundle
+      let homeViewController = StoryboardViewControllerResource<HomeViewController>(identifier: "HomeViewController")
+      let name = "Home"
+      
+      func homeViewController(_: Void = ()) -> HomeViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: homeViewController)
+      }
+      
+      static func validate() throws {
+        if #available(iOS 11.0, *) {
+        }
+        if _R.storyboard.home().homeViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'homeViewController' could not be loaded from storyboard 'Home' as 'HomeViewController'.") }
+      }
+      
+      fileprivate init() {}
     }
     
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
@@ -74,15 +130,21 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = UIKit.UITabBarController
+    struct settings: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = SettingsViewController
       
       let bundle = R.hostingBundle
-      let name = "Main"
+      let name = "Settings"
+      let settingsViewController = StoryboardViewControllerResource<SettingsViewController>(identifier: "SettingsViewController")
+      
+      func settingsViewController(_: Void = ()) -> SettingsViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: settingsViewController)
+      }
       
       static func validate() throws {
         if #available(iOS 11.0, *) {
         }
+        if _R.storyboard.settings().settingsViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'settingsViewController' could not be loaded from storyboard 'Settings' as 'SettingsViewController'.") }
       }
       
       fileprivate init() {}
