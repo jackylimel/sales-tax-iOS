@@ -12,7 +12,7 @@ Libraries used in this repo:
 - R.swift for strong typed resources
 - RxSwift
 - Moya for networking
-- XCGLogger for loging
+- XCGLogger for logging
 - Eureka for building forms
 - RealmSwift for data storage
 - Quick + Nimble for testing
