@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0639A61BCA370C3360A9142B /* Pods_SalesTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0DC2E282A4ABE78EFD7159 /* Pods_SalesTax.framework */; };
+		60354053265B06B630174F00 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6035459D706FE574EB0699E1 /* DashboardViewController.swift */; };
 		603542E5B8485C3D51106122 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60354AA916F24670E4F79C38 /* SettingsViewController.swift */; };
 		60354FEE7409E3F4B9F71D67 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60354718C4891FC601A73AE1 /* HomeViewController.swift */; };
 		8507066F219A236F0055BCAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8507066E219A236F0055BCAF /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 		8539AD04219A2A240027E6DB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8539AD03219A2A240027E6DB /* R.generated.swift */; };
 		8539AD09219A54710027E6DB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8539AD08219A54710027E6DB /* Home.storyboard */; };
 		8539AD0E219A57490027E6DB /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8539AD0D219A57490027E6DB /* Settings.storyboard */; };
+		8539AD11219A68FD0027E6DB /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8539AD10219A68FD0027E6DB /* Dashboard.storyboard */; };
 		8DCA0BA6BA717E3CCF25FFD0 /* Pods_SalesTax_SalesTaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577FD59B0853A3EF1CBCAC7A /* Pods_SalesTax_SalesTaxTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,7 @@
 		2DE94018F65A6369C4760FC3 /* Pods-SalesTax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax.release.xcconfig"; sourceTree = "<group>"; };
 		577FD59B0853A3EF1CBCAC7A /* Pods_SalesTax_SalesTaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesTax_SalesTaxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F63774A490BCF75DBFDA328 /* Pods-SalesTax-SalesTaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax-SalesTaxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax-SalesTaxTests/Pods-SalesTax-SalesTaxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6035459D706FE574EB0699E1 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		60354718C4891FC601A73AE1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		60354AA916F24670E4F79C38 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		80B5EF9B1878E09A97B7BF13 /* Pods-SalesTax-SalesTaxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax-SalesTaxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax-SalesTaxTests/Pods-SalesTax-SalesTaxTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		8539AD03219A2A240027E6DB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		8539AD08219A54710027E6DB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		8539AD0D219A57490027E6DB /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		8539AD10219A68FD0027E6DB /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		C07127EB9E2E4FBF1672AF05 /* Pods-SalesTax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +137,7 @@
 		8539AD05219A446D0027E6DB /* App */ = {
 			isa = PBXGroup;
 			children = (
+				8539AD0F219A68ED0027E6DB /* Dashboard */,
 				8539AD0B219A571D0027E6DB /* Settings */,
 				8539AD0A219A57190027E6DB /* Home */,
 				85070672219A236F0055BCAF /* Entrance.storyboard */,
@@ -172,6 +177,15 @@
 				8539AD0D219A57490027E6DB /* Settings.storyboard */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		8539AD0F219A68ED0027E6DB /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				8539AD10219A68FD0027E6DB /* Dashboard.storyboard */,
+				6035459D706FE574EB0699E1 /* DashboardViewController.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		B461980343B0B2955D1A8DE9 /* Frameworks */ = {
@@ -270,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85070679219A23700055BCAF /* LaunchScreen.storyboard in Resources */,
+				8539AD11219A68FD0027E6DB /* Dashboard.storyboard in Resources */,
 				85070676219A23700055BCAF /* Assets.xcassets in Resources */,
 				85070674219A236F0055BCAF /* Entrance.storyboard in Resources */,
 				8539AD09219A54710027E6DB /* Home.storyboard in Resources */,
@@ -457,6 +472,7 @@
 				8539AD04219A2A240027E6DB /* R.generated.swift in Sources */,
 				60354FEE7409E3F4B9F71D67 /* HomeViewController.swift in Sources */,
 				603542E5B8485C3D51106122 /* SettingsViewController.swift in Sources */,
+				60354053265B06B630174F00 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

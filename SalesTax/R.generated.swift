@@ -16,8 +16,12 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.image` struct is generated, and contains static references to 4 images.
+  /// This `R.image` struct is generated, and contains static references to 6 images.
   struct image {
+    /// Image `dashboard-selected`.
+    static let dashboardSelected = Rswift.ImageResource(bundle: R.hostingBundle, name: "dashboard-selected")
+    /// Image `dashboard`.
+    static let dashboard = Rswift.ImageResource(bundle: R.hostingBundle, name: "dashboard")
     /// Image `home-selected`.
     static let homeSelected = Rswift.ImageResource(bundle: R.hostingBundle, name: "home-selected")
     /// Image `home`.
@@ -26,6 +30,16 @@ struct R: Rswift.Validatable {
     static let settingsSelected = Rswift.ImageResource(bundle: R.hostingBundle, name: "settings-selected")
     /// Image `settings`.
     static let settings = Rswift.ImageResource(bundle: R.hostingBundle, name: "settings")
+    
+    /// `UIImage(named: "dashboard", bundle: ..., traitCollection: ...)`
+    static func dashboard(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.dashboard, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "dashboard-selected", bundle: ..., traitCollection: ...)`
+    static func dashboardSelected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.dashboardSelected, compatibleWith: traitCollection)
+    }
     
     /// `UIImage(named: "home", bundle: ..., traitCollection: ...)`
     static func home(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -50,8 +64,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 4 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 5 storyboards.
   struct storyboard {
+    /// Storyboard `Dashboard`.
+    static let dashboard = _R.storyboard.dashboard()
     /// Storyboard `Entrance`.
     static let entrance = _R.storyboard.entrance()
     /// Storyboard `Home`.
@@ -60,6 +76,11 @@ struct R: Rswift.Validatable {
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Settings`.
     static let settings = _R.storyboard.settings()
+    
+    /// `UIStoryboard(name: "Dashboard", bundle: ...)`
+    static func dashboard(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.dashboard)
+    }
     
     /// `UIStoryboard(name: "Entrance", bundle: ...)`
     static func entrance(_: Void = ()) -> UIKit.UIStoryboard {
@@ -104,10 +125,31 @@ struct _R: Rswift.Validatable {
   
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
-      try home.validate()
       try launchScreen.validate()
       try settings.validate()
       try entrance.validate()
+      try home.validate()
+      try dashboard.validate()
+    }
+    
+    struct dashboard: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = DashboardViewController
+      
+      let bundle = R.hostingBundle
+      let dashboardViewController = StoryboardViewControllerResource<DashboardViewController>(identifier: "DashboardViewController")
+      let name = "Dashboard"
+      
+      func dashboardViewController(_: Void = ()) -> DashboardViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: dashboardViewController)
+      }
+      
+      static func validate() throws {
+        if #available(iOS 11.0, *) {
+        }
+        if _R.storyboard.dashboard().dashboardViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'dashboardViewController' could not be loaded from storyboard 'Dashboard' as 'DashboardViewController'.") }
+      }
+      
+      fileprivate init() {}
     }
     
     struct entrance: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
