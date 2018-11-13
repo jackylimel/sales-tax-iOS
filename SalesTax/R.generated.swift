@@ -16,6 +16,40 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
+  /// This `R.image` struct is generated, and contains static references to 4 images.
+  struct image {
+    /// Image `home-selected`.
+    static let homeSelected = Rswift.ImageResource(bundle: R.hostingBundle, name: "home-selected")
+    /// Image `home`.
+    static let home = Rswift.ImageResource(bundle: R.hostingBundle, name: "home")
+    /// Image `settings-selected`.
+    static let settingsSelected = Rswift.ImageResource(bundle: R.hostingBundle, name: "settings-selected")
+    /// Image `settings`.
+    static let settings = Rswift.ImageResource(bundle: R.hostingBundle, name: "settings")
+    
+    /// `UIImage(named: "home", bundle: ..., traitCollection: ...)`
+    static func home(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.home, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "home-selected", bundle: ..., traitCollection: ...)`
+    static func homeSelected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.homeSelected, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "settings", bundle: ..., traitCollection: ...)`
+    static func settings(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.settings, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "settings-selected", bundle: ..., traitCollection: ...)`
+    static func settingsSelected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.settingsSelected, compatibleWith: traitCollection)
+    }
+    
+    fileprivate init() {}
+  }
+  
   /// This `R.storyboard` struct is generated, and contains static references to 4 storyboards.
   struct storyboard {
     /// Storyboard `Entrance`.
@@ -70,10 +104,10 @@ struct _R: Rswift.Validatable {
   
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
-      try entrance.validate()
-      try launchScreen.validate()
       try home.validate()
+      try launchScreen.validate()
       try settings.validate()
+      try entrance.validate()
     }
     
     struct entrance: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
