@@ -125,11 +125,11 @@ struct _R: Rswift.Validatable {
   
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
-      try launchScreen.validate()
-      try settings.validate()
-      try entrance.validate()
-      try home.validate()
       try dashboard.validate()
+      try home.validate()
+      try settings.validate()
+      try launchScreen.validate()
+      try entrance.validate()
     }
     
     struct dashboard: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {

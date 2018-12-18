@@ -16,7 +16,6 @@
 		85070674219A236F0055BCAF /* Entrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85070672219A236F0055BCAF /* Entrance.storyboard */; };
 		85070676219A23700055BCAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85070675219A23700055BCAF /* Assets.xcassets */; };
 		85070679219A23700055BCAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85070677219A23700055BCAF /* LaunchScreen.storyboard */; };
-		85070684219A23700055BCAF /* SalesTaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85070683219A23700055BCAF /* SalesTaxTests.swift */; };
 		8539AD04219A2A240027E6DB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8539AD03219A2A240027E6DB /* R.generated.swift */; };
 		8539AD09219A54710027E6DB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8539AD08219A54710027E6DB /* Home.storyboard */; };
 		8539AD0E219A57490027E6DB /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8539AD0D219A57490027E6DB /* Settings.storyboard */; };
@@ -43,15 +42,14 @@
 		60354718C4891FC601A73AE1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		60354AA916F24670E4F79C38 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		80B5EF9B1878E09A97B7BF13 /* Pods-SalesTax-SalesTaxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax-SalesTaxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax-SalesTaxTests/Pods-SalesTax-SalesTaxTests.release.xcconfig"; sourceTree = "<group>"; };
-		8507066B219A236F0055BCAF /* SalesTax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalesTax.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8507066B219A236F0055BCAF /* xtzmaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xtzmaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8507066E219A236F0055BCAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85070670219A236F0055BCAF /* EntranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceViewController.swift; sourceTree = "<group>"; };
 		85070673219A236F0055BCAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Entrance.storyboard; sourceTree = "<group>"; };
 		85070675219A23700055BCAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85070678219A23700055BCAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8507067A219A23700055BCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8507067F219A23700055BCAF /* SalesTaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalesTaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		85070683219A23700055BCAF /* SalesTaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxTests.swift; sourceTree = "<group>"; };
+		8507067F219A23700055BCAF /* xtzmasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xtzmasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85070685219A23700055BCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8539AD03219A2A240027E6DB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		8539AD08219A54710027E6DB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -94,8 +92,8 @@
 		85070662219A236F0055BCAF = {
 			isa = PBXGroup;
 			children = (
-				8507066D219A236F0055BCAF /* SalesTax */,
-				85070682219A23700055BCAF /* SalesTaxTests */,
+				8507066D219A236F0055BCAF /* xtzmaster */,
+				85070682219A23700055BCAF /* xtzmasterTests */,
 				8507066C219A236F0055BCAF /* Products */,
 				22A0B19D58BCFC8CA2BA84BA /* Pods */,
 				B461980343B0B2955D1A8DE9 /* Frameworks */,
@@ -105,33 +103,30 @@
 		8507066C219A236F0055BCAF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8507066B219A236F0055BCAF /* SalesTax.app */,
-				8507067F219A23700055BCAF /* SalesTaxTests.xctest */,
+				8507066B219A236F0055BCAF /* xtzmaster.app */,
+				8507067F219A23700055BCAF /* xtzmasterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8507066D219A236F0055BCAF /* SalesTax */ = {
+		8507066D219A236F0055BCAF /* xtzmaster */ = {
 			isa = PBXGroup;
 			children = (
 				8539AD05219A446D0027E6DB /* App */,
-				8539AD06219A44770027E6DB /* Domain */,
-				8539AD07219A447F0027E6DB /* Data */,
 				8539AD03219A2A240027E6DB /* R.generated.swift */,
 				8507066E219A236F0055BCAF /* AppDelegate.swift */,
 				85070677219A23700055BCAF /* LaunchScreen.storyboard */,
 				8507067A219A23700055BCAF /* Info.plist */,
 			);
-			path = SalesTax;
+			path = xtzmaster;
 			sourceTree = "<group>";
 		};
-		85070682219A23700055BCAF /* SalesTaxTests */ = {
+		85070682219A23700055BCAF /* xtzmasterTests */ = {
 			isa = PBXGroup;
 			children = (
-				85070683219A23700055BCAF /* SalesTaxTests.swift */,
 				85070685219A23700055BCAF /* Info.plist */,
 			);
-			path = SalesTaxTests;
+			path = xtzmasterTests;
 			sourceTree = "<group>";
 		};
 		8539AD05219A446D0027E6DB /* App */ = {
@@ -145,20 +140,6 @@
 				85070675219A23700055BCAF /* Assets.xcassets */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		8539AD06219A44770027E6DB /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		8539AD07219A447F0027E6DB /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		8539AD0A219A57190027E6DB /* Home */ = {
@@ -200,9 +181,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8507066A219A236F0055BCAF /* SalesTax */ = {
+		8507066A219A236F0055BCAF /* xtzmaster */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85070688219A23700055BCAF /* Build configuration list for PBXNativeTarget "SalesTax" */;
+			buildConfigurationList = 85070688219A23700055BCAF /* Build configuration list for PBXNativeTarget "xtzmaster" */;
 			buildPhases = (
 				6F0ACD00797BDB8E850EF972 /* [CP] Check Pods Manifest.lock */,
 				8539AD00219A29000027E6DB /* Generete R.swift */,
@@ -215,14 +196,14 @@
 			);
 			dependencies = (
 			);
-			name = SalesTax;
+			name = xtzmaster;
 			productName = SalesTax;
-			productReference = 8507066B219A236F0055BCAF /* SalesTax.app */;
+			productReference = 8507066B219A236F0055BCAF /* xtzmaster.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8507067E219A23700055BCAF /* SalesTaxTests */ = {
+		8507067E219A23700055BCAF /* xtzmasterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8507068B219A23700055BCAF /* Build configuration list for PBXNativeTarget "SalesTaxTests" */;
+			buildConfigurationList = 8507068B219A23700055BCAF /* Build configuration list for PBXNativeTarget "xtzmasterTests" */;
 			buildPhases = (
 				DB6F40AC05A6074B0C158520 /* [CP] Check Pods Manifest.lock */,
 				8507067B219A23700055BCAF /* Sources */,
@@ -235,9 +216,9 @@
 			dependencies = (
 				85070681219A23700055BCAF /* PBXTargetDependency */,
 			);
-			name = SalesTaxTests;
+			name = xtzmasterTests;
 			productName = SalesTaxTests;
-			productReference = 8507067F219A23700055BCAF /* SalesTaxTests.xctest */;
+			productReference = 8507067F219A23700055BCAF /* xtzmasterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -259,7 +240,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 85070666219A236F0055BCAF /* Build configuration list for PBXProject "SalesTax" */;
+			buildConfigurationList = 85070666219A236F0055BCAF /* Build configuration list for PBXProject "xtzmaster" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -272,8 +253,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8507066A219A236F0055BCAF /* SalesTax */,
-				8507067E219A23700055BCAF /* SalesTaxTests */,
+				8507066A219A236F0055BCAF /* xtzmaster */,
+				8507067E219A23700055BCAF /* xtzmasterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -436,7 +417,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/SalesTax\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/xtzmaster\"\n";
 		};
 		DB6F40AC05A6074B0C158520 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -480,7 +461,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85070684219A23700055BCAF /* SalesTaxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +469,7 @@
 /* Begin PBXTargetDependency section */
 		85070681219A23700055BCAF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8507066A219A236F0055BCAF /* SalesTax */;
+			target = 8507066A219A236F0055BCAF /* xtzmaster */;
 			targetProxy = 85070680219A23700055BCAF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -636,12 +616,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SalesTax/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/xtzmaster/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.SalesTax;
+				PRODUCT_BUNDLE_IDENTIFIER = dashboard.xtzmaster.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -654,12 +634,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SalesTax/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/xtzmaster/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.SalesTax;
+				PRODUCT_BUNDLE_IDENTIFIER = dashboard.xtzmaster.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -682,7 +662,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalesTax.app/SalesTax";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xtzmaster.app/xtzmaster";
 			};
 			name = Debug;
 		};
@@ -702,14 +682,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalesTax.app/SalesTax";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xtzmaster.app/xtzmaster";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		85070666219A236F0055BCAF /* Build configuration list for PBXProject "SalesTax" */ = {
+		85070666219A236F0055BCAF /* Build configuration list for PBXProject "xtzmaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85070686219A23700055BCAF /* Debug */,
@@ -718,7 +698,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85070688219A23700055BCAF /* Build configuration list for PBXNativeTarget "SalesTax" */ = {
+		85070688219A23700055BCAF /* Build configuration list for PBXNativeTarget "xtzmaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85070689219A23700055BCAF /* Debug */,
@@ -727,7 +707,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8507068B219A23700055BCAF /* Build configuration list for PBXNativeTarget "SalesTaxTests" */ = {
+		8507068B219A23700055BCAF /* Build configuration list for PBXNativeTarget "xtzmasterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8507068C219A23700055BCAF /* Debug */,
