@@ -21,6 +21,7 @@
 		8539AD0E219A57490027E6DB /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8539AD0D219A57490027E6DB /* Settings.storyboard */; };
 		8539AD11219A68FD0027E6DB /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8539AD10219A68FD0027E6DB /* Dashboard.storyboard */; };
 		8DCA0BA6BA717E3CCF25FFD0 /* Pods_SalesTax_SalesTaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577FD59B0853A3EF1CBCAC7A /* Pods_SalesTax_SalesTaxTests.framework */; };
+		917AC24F21C910D800E9CA48 /* XTZMasterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917AC24E21C910D800E9CA48 /* XTZMasterAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		8539AD08219A54710027E6DB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		8539AD0D219A57490027E6DB /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		8539AD10219A68FD0027E6DB /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		917AC24E21C910D800E9CA48 /* XTZMasterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTZMasterAPI.swift; sourceTree = "<group>"; };
 		C07127EB9E2E4FBF1672AF05 /* Pods-SalesTax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				8539AD05219A446D0027E6DB /* App */,
+				917AC24B21C9105100E9CA48 /* Data */,
 				8539AD03219A2A240027E6DB /* R.generated.swift */,
 				8507066E219A236F0055BCAF /* AppDelegate.swift */,
 				85070677219A23700055BCAF /* LaunchScreen.storyboard */,
@@ -167,6 +170,30 @@
 				6035459D706FE574EB0699E1 /* DashboardViewController.swift */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		917AC24B21C9105100E9CA48 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				917AC24D21C9106B00E9CA48 /* DataModel */,
+				917AC24C21C9106100E9CA48 /* Repository */,
+				917AC24E21C910D800E9CA48 /* XTZMasterAPI.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		917AC24C21C9106100E9CA48 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		917AC24D21C9106B00E9CA48 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		B461980343B0B2955D1A8DE9 /* Frameworks */ = {
@@ -449,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85070671219A236F0055BCAF /* EntranceViewController.swift in Sources */,
+				917AC24F21C910D800E9CA48 /* XTZMasterAPI.swift in Sources */,
 				8507066F219A236F0055BCAF /* AppDelegate.swift in Sources */,
 				8539AD04219A2A240027E6DB /* R.generated.swift in Sources */,
 				60354FEE7409E3F4B9F71D67 /* HomeViewController.swift in Sources */,
