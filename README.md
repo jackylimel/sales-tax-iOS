@@ -1,11 +1,12 @@
-# sales-tax-iOS
+# dashboard for xtzmaster.com
 
-A basic iOS app demoing a few design principles and patterns: 
+It's also an iOS app demoing a few design principles and patterns
 
 - Clean Architecture
 - MVVM
 - RX
-- Coordinator
+
+I've summarized the idea here: https://medium.com/@jackyli1981/android-development-with-rx-mvp-and-clean-architecture-25bced497c8
 
 Libraries used in this repo:
 
