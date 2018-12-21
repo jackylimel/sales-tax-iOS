@@ -9,7 +9,6 @@ enum XTZMasterAPI {
 }
 
 extension XTZMasterAPI: TargetType {
-  
   var baseURL: URL {
     return URL(string: "https://api5.tzscan.io/v2")!
   }
