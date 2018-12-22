@@ -23,6 +23,7 @@
 		8DCA0BA6BA717E3CCF25FFD0 /* Pods_SalesTax_SalesTaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577FD59B0853A3EF1CBCAC7A /* Pods_SalesTax_SalesTaxTests.framework */; };
 		911FA55B21CCF7A100D6639E /* AccountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911FA55A21CCF7A100D6639E /* AccountProvider.swift */; };
 		911FA55D21CCF8CB00D6639E /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911FA55C21CCF8CB00D6639E /* Account.swift */; };
+		911FA56A21CE532E00D6639E /* GetAccountInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911FA56921CE532E00D6639E /* GetAccountInfoUseCase.swift */; };
 		917AC24F21C910D800E9CA48 /* XTZMasterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917AC24E21C910D800E9CA48 /* XTZMasterAPI.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		8539AD10219A68FD0027E6DB /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		911FA55A21CCF7A100D6639E /* AccountProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProvider.swift; sourceTree = "<group>"; };
 		911FA55C21CCF8CB00D6639E /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		911FA56921CE532E00D6639E /* GetAccountInfoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAccountInfoUseCase.swift; sourceTree = "<group>"; };
 		917AC24E21C910D800E9CA48 /* XTZMasterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTZMasterAPI.swift; sourceTree = "<group>"; };
 		C07127EB9E2E4FBF1672AF05 /* Pods-SalesTax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				8539AD05219A446D0027E6DB /* App */,
+				911FA56721CE52F600D6639E /* UseCase */,
 				917AC24B21C9105100E9CA48 /* Data */,
 				8539AD03219A2A240027E6DB /* R.generated.swift */,
 				8507066E219A236F0055BCAF /* AppDelegate.swift */,
@@ -174,6 +177,14 @@
 				6035459D706FE574EB0699E1 /* DashboardViewController.swift */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		911FA56721CE52F600D6639E /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				911FA56921CE532E00D6639E /* GetAccountInfoUseCase.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 		9143E52321C9153C00B79D27 /* Provider */ = {
@@ -491,6 +502,7 @@
 			files = (
 				911FA55B21CCF7A100D6639E /* AccountProvider.swift in Sources */,
 				85070671219A236F0055BCAF /* EntranceViewController.swift in Sources */,
+				911FA56A21CE532E00D6639E /* GetAccountInfoUseCase.swift in Sources */,
 				917AC24F21C910D800E9CA48 /* XTZMasterAPI.swift in Sources */,
 				8507066F219A236F0055BCAF /* AppDelegate.swift in Sources */,
 				8539AD04219A2A240027E6DB /* R.generated.swift in Sources */,

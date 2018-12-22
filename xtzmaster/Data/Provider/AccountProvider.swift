@@ -3,24 +3,26 @@ import Moya
 import RxSwift
 
 struct AccountProvider {
+  let provider = MoyaProvider<XTZMasterAPI>()
+  
   func getAccount(address: String) -> Observable<Account> {
     return Observable.just(address)
       .flatMap { address in
-        MoyaProvider<XTZMasterAPI>().rx.request(.getAccount(accountAddress: address))
+        self.provider.rx.request(.getAccount(accountAddress: address))
       }
       .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .default))
       .flatMap { (response) -> Observable<Account> in
         return self.mapResponseTo(response: response)
       }
       .catchError({ (error) in
-          return Observable.error(error)
+        return Observable.error(error)
       })
   }
   
   func getStaking(address: String) -> Observable<String> {
     return Observable.just(address)
       .flatMap { address in
-        MoyaProvider<XTZMasterAPI>().rx.request(.getAccount(accountAddress: address))
+        self.provider.rx.request(.getStakingBalance(accountAddress: address))
       }
       .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .default))
       .flatMap { (response) -> Observable<String> in
