@@ -34,6 +34,24 @@ struct AccountProvider {
       })
   }
   
+  func getCurrentCycle() -> Observable<Int> {
+    return Observable.just(true)
+      .flatMap { _ in
+        MoyaProvider<XTZMasterAPI>().rx.request(.getHead())
+      }
+      .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .default))
+      .flatMap { (response) -> Observable<Int> in
+        if let json = try response.mapJSON() as? [String: Any],
+           let level = json["level"] as? Int {
+          return Observable.just(level / 4096)
+        }
+        return Observable.just(0)
+      }
+      .catchError({ (error) in
+        return Observable.error(error)
+      })
+  }
+  
   private func mapResponseTo<T>(response: Response) -> Observable<T> where T: Codable {
     do {
       let filteredResponse = try response.filterSuccessfulStatusCodes()

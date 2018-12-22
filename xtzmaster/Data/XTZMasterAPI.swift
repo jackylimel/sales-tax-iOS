@@ -6,6 +6,7 @@ enum XTZMasterAPI {
   case getStakingBalance(accountAddress: String)
   case getRewardSplit(accountAddress: String, cycle: Int)
   case getAllBakedAddresses(bakerAddress: String)
+  case getHead()
 }
 
 extension XTZMasterAPI: TargetType {
@@ -23,6 +24,8 @@ extension XTZMasterAPI: TargetType {
       return "/rewards_split/\(accountAddress)"
     case let .getAllBakedAddresses(bakerAddress):
       return "/operations/\(bakerAddress)"
+    case .getHead:
+      return "/head"
     }
   }
   
@@ -32,7 +35,7 @@ extension XTZMasterAPI: TargetType {
   
   var task: Task {
     switch self {
-    case .getAccount, .getStakingBalance:
+    case .getAccount, .getStakingBalance, .getHead:
       return .requestParameters(parameters: [:], encoding: URLEncoding.queryString)
     case let .getRewardSplit(_, cycle):
       return .requestParameters(parameters: ["cycle": cycle, "number": 999], encoding: URLEncoding.queryString)
