@@ -23,7 +23,7 @@ extension XTZMasterAPI: TargetType {
     case let .getRewardSplit(accountAddress, _):
       return "/rewards_split/\(accountAddress)"
     case let .getAllBakedAddresses(bakerAddress):
-      return "/operations/\(bakerAddress)"
+      return "/delegated_contracts/\(bakerAddress)"
     case .getHead:
       return "/head"
     }
@@ -40,7 +40,7 @@ extension XTZMasterAPI: TargetType {
     case let .getRewardSplit(_, cycle):
       return .requestParameters(parameters: ["cycle": cycle, "number": 999], encoding: URLEncoding.queryString)
     case .getAllBakedAddresses:
-      return .requestParameters(parameters: ["type": "Transaction", "number": 999, "p": 0], encoding: URLEncoding.queryString)
+      return .requestParameters(parameters: ["number": 999], encoding: URLEncoding.queryString)
     }
   }
   
@@ -49,6 +49,6 @@ extension XTZMasterAPI: TargetType {
   }
   
   var headers: [String : String]? {
-    return ["Content-type": "application/json"]
+    return [:]
   }
 }

@@ -36,6 +36,23 @@ struct AccountProvider {
       })
   }
   
+  func getAllBakedAddress(bakerAddress: String) -> Observable<[String]> {
+    return Observable.just(bakerAddress)
+      .flatMap { address in
+        self.provider.rx.request(.getAllBakedAddresses(bakerAddress: address))
+      }
+      .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .default))
+      .flatMap { (response) -> Observable<[String]> in
+        if let json = try response.mapJSON() as? [String] {
+          return Observable.just(json)
+        }
+        return Observable.just([])
+      }
+      .catchError({ (error) in
+        return Observable.error(error)
+      })
+  }
+  
   func getCurrentCycle() -> Observable<Int> {
     return Observable.just(true)
       .flatMap { _ in
