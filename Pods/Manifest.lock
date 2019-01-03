@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.7.3)
   - Eureka (4.3.0)
+  - MBProgressHUD (1.1.0)
   - Moya/Core (11.0.2):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
@@ -39,6 +40,7 @@ PODS:
 
 DEPENDENCIES:
   - Eureka (~> 4.3)
+  - MBProgressHUD
   - Moya/RxSwift (~> 11.0)
   - Nimble (~> 7.0)
   - Quick (~> 1.1)
@@ -54,6 +56,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Eureka
+    - MBProgressHUD
     - Moya
     - Nimble
     - ObjcExceptionBridging
@@ -73,6 +76,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Eureka: 6d711cb30ca333b4bc893110285a722ae3840114
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
@@ -89,6 +93,6 @@ SPEC CHECKSUMS:
   RxTest: 19d03286bdc0a3aaea5d61d4cde31fdf4bb8a5ba
   XCGLogger: 7f7f43f15dfe3a305fa1342b7dc29af656289abd
 
-PODFILE CHECKSUM: f2972df5216f36d12bebf995adb0f353a6d348df
+PODFILE CHECKSUM: 907bf53cd607fd4ca6f3ca8b024154656486164b
 
 COCOAPODS: 1.5.3

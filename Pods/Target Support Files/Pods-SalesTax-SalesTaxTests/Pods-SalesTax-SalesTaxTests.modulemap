@@ -1,6 +1,0 @@
-framework module Pods_SalesTax_SalesTaxTests {
-  umbrella header "Pods-SalesTax-SalesTaxTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

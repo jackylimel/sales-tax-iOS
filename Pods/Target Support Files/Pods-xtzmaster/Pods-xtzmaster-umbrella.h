@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SalesTax_SalesTaxTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SalesTax_SalesTaxTestsVersionString[];
+FOUNDATION_EXPORT double Pods_xtzmasterVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_xtzmasterVersionString[];
 

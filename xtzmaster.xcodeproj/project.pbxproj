@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0639A61BCA370C3360A9142B /* Pods_SalesTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0DC2E282A4ABE78EFD7159 /* Pods_SalesTax.framework */; };
+		392EFA0DC70B7B6BBC9F6529 /* Pods_xtzmaster_xtzmasterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD87B3CA81B323970C815BA /* Pods_xtzmaster_xtzmasterTests.framework */; };
 		60354053265B06B630174F00 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6035459D706FE574EB0699E1 /* DashboardViewController.swift */; };
 		603542E5B8485C3D51106122 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60354AA916F24670E4F79C38 /* SettingsViewController.swift */; };
 		60354FEE7409E3F4B9F71D67 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60354718C4891FC601A73AE1 /* HomeViewController.swift */; };
@@ -21,11 +22,17 @@
 		8539AD0E219A57490027E6DB /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8539AD0D219A57490027E6DB /* Settings.storyboard */; };
 		8539AD11219A68FD0027E6DB /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8539AD10219A68FD0027E6DB /* Dashboard.storyboard */; };
 		8DCA0BA6BA717E3CCF25FFD0 /* Pods_SalesTax_SalesTaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577FD59B0853A3EF1CBCAC7A /* Pods_SalesTax_SalesTaxTests.framework */; };
+		911CB4D221DDDF8700725444 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911CB4D121DDDF8700725444 /* Colors.xcassets */; };
+		911CB4D421DDE1B800725444 /* DashboardAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911CB4D321DDE1B800725444 /* DashboardAddressCell.xib */; };
+		911CB4D621DDE1C600725444 /* DashboardAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CB4D521DDE1C600725444 /* DashboardAddressCell.swift */; };
+		911CB4D921DDE6C200725444 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CB4D821DDE6C200725444 /* UIViewController+Extension.swift */; };
 		911FA55B21CCF7A100D6639E /* AccountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911FA55A21CCF7A100D6639E /* AccountProvider.swift */; };
 		911FA55D21CCF8CB00D6639E /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911FA55C21CCF8CB00D6639E /* Account.swift */; };
 		911FA56A21CE532E00D6639E /* GetAccountInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911FA56921CE532E00D6639E /* GetAccountInfoUseCase.swift */; };
 		911FA56C21CF9F4600D6639E /* GetBakingInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911FA56B21CF9F4600D6639E /* GetBakingInfoUseCase.swift */; };
+		9135B90321D8A6820077ED46 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135B90221D8A6820077ED46 /* DashboardViewModel.swift */; };
 		917AC24F21C910D800E9CA48 /* XTZMasterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917AC24E21C910D800E9CA48 /* XTZMasterAPI.swift */; };
+		D210B3799890969B22A7ADD4 /* Pods_xtzmaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDA27FB62DFBDC0D29B1896 /* Pods_xtzmaster.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F3E3E769F2BFC14375DD140 /* Pods-xtzmaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xtzmaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-xtzmaster/Pods-xtzmaster.release.xcconfig"; sourceTree = "<group>"; };
+		2498282AB9DA00E92BAD91B9 /* Pods-xtzmaster-xtzmasterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xtzmaster-xtzmasterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xtzmaster-xtzmasterTests/Pods-xtzmaster-xtzmasterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A0DC2E282A4ABE78EFD7159 /* Pods_SalesTax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesTax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE94018F65A6369C4760FC3 /* Pods-SalesTax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax.release.xcconfig"; sourceTree = "<group>"; };
 		577FD59B0853A3EF1CBCAC7A /* Pods_SalesTax_SalesTaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesTax_SalesTaxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD87B3CA81B323970C815BA /* Pods_xtzmaster_xtzmasterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xtzmaster_xtzmasterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F63774A490BCF75DBFDA328 /* Pods-SalesTax-SalesTaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax-SalesTaxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax-SalesTaxTests/Pods-SalesTax-SalesTaxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6035459D706FE574EB0699E1 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		60354718C4891FC601A73AE1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -60,12 +70,20 @@
 		8539AD08219A54710027E6DB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		8539AD0D219A57490027E6DB /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		8539AD10219A68FD0027E6DB /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		911CB4D121DDDF8700725444 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		911CB4D321DDE1B800725444 /* DashboardAddressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardAddressCell.xib; sourceTree = "<group>"; };
+		911CB4D521DDE1C600725444 /* DashboardAddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAddressCell.swift; sourceTree = "<group>"; };
+		911CB4D821DDE6C200725444 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		911FA55A21CCF7A100D6639E /* AccountProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProvider.swift; sourceTree = "<group>"; };
 		911FA55C21CCF8CB00D6639E /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		911FA56921CE532E00D6639E /* GetAccountInfoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAccountInfoUseCase.swift; sourceTree = "<group>"; };
 		911FA56B21CF9F4600D6639E /* GetBakingInfoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBakingInfoUseCase.swift; sourceTree = "<group>"; };
+		9135B90221D8A6820077ED46 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		917AC24E21C910D800E9CA48 /* XTZMasterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTZMasterAPI.swift; sourceTree = "<group>"; };
+		96A2575403FC99E42CDD695B /* Pods-xtzmaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xtzmaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xtzmaster/Pods-xtzmaster.debug.xcconfig"; sourceTree = "<group>"; };
 		C07127EB9E2E4FBF1672AF05 /* Pods-SalesTax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax.debug.xcconfig"; sourceTree = "<group>"; };
+		CEDA27FB62DFBDC0D29B1896 /* Pods_xtzmaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xtzmaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC0BF8FE81805D9A443227D /* Pods-xtzmaster-xtzmasterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xtzmaster-xtzmasterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-xtzmaster-xtzmasterTests/Pods-xtzmaster-xtzmasterTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0639A61BCA370C3360A9142B /* Pods_SalesTax.framework in Frameworks */,
+				D210B3799890969B22A7ADD4 /* Pods_xtzmaster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DCA0BA6BA717E3CCF25FFD0 /* Pods_SalesTax_SalesTaxTests.framework in Frameworks */,
+				392EFA0DC70B7B6BBC9F6529 /* Pods_xtzmaster_xtzmasterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +115,10 @@
 				2DE94018F65A6369C4760FC3 /* Pods-SalesTax.release.xcconfig */,
 				5F63774A490BCF75DBFDA328 /* Pods-SalesTax-SalesTaxTests.debug.xcconfig */,
 				80B5EF9B1878E09A97B7BF13 /* Pods-SalesTax-SalesTaxTests.release.xcconfig */,
+				96A2575403FC99E42CDD695B /* Pods-xtzmaster.debug.xcconfig */,
+				0F3E3E769F2BFC14375DD140 /* Pods-xtzmaster.release.xcconfig */,
+				2498282AB9DA00E92BAD91B9 /* Pods-xtzmaster-xtzmasterTests.debug.xcconfig */,
+				DCC0BF8FE81805D9A443227D /* Pods-xtzmaster-xtzmasterTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -144,11 +168,13 @@
 		8539AD05219A446D0027E6DB /* App */ = {
 			isa = PBXGroup;
 			children = (
+				911CB4D721DDE6B600725444 /* Helper */,
 				8539AD0F219A68ED0027E6DB /* Dashboard */,
 				8539AD0B219A571D0027E6DB /* Settings */,
 				8539AD0A219A57190027E6DB /* Home */,
 				85070672219A236F0055BCAF /* Entrance.storyboard */,
 				85070670219A236F0055BCAF /* EntranceViewController.swift */,
+				911CB4D121DDDF8700725444 /* Colors.xcassets */,
 				85070675219A23700055BCAF /* Assets.xcassets */,
 			);
 			path = App;
@@ -177,8 +203,19 @@
 			children = (
 				8539AD10219A68FD0027E6DB /* Dashboard.storyboard */,
 				6035459D706FE574EB0699E1 /* DashboardViewController.swift */,
+				9135B90221D8A6820077ED46 /* DashboardViewModel.swift */,
+				911CB4D321DDE1B800725444 /* DashboardAddressCell.xib */,
+				911CB4D521DDE1C600725444 /* DashboardAddressCell.swift */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		911CB4D721DDE6B600725444 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				911CB4D821DDE6C200725444 /* UIViewController+Extension.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		911FA56721CE52F600D6639E /* UseCase */ = {
@@ -229,6 +266,8 @@
 			children = (
 				2A0DC2E282A4ABE78EFD7159 /* Pods_SalesTax.framework */,
 				577FD59B0853A3EF1CBCAC7A /* Pods_SalesTax_SalesTaxTests.framework */,
+				CEDA27FB62DFBDC0D29B1896 /* Pods_xtzmaster.framework */,
+				5AD87B3CA81B323970C815BA /* Pods_xtzmaster_xtzmasterTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -325,6 +364,8 @@
 				85070674219A236F0055BCAF /* Entrance.storyboard in Resources */,
 				8539AD09219A54710027E6DB /* Home.storyboard in Resources */,
 				8539AD0E219A57490027E6DB /* Settings.storyboard in Resources */,
+				911CB4D221DDDF8700725444 /* Colors.xcassets in Resources */,
+				911CB4D421DDE1B800725444 /* DashboardAddressCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,9 +387,10 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SalesTax-SalesTaxTests/Pods-SalesTax-SalesTaxTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-xtzmaster-xtzmasterTests/Pods-xtzmaster-xtzmasterTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
@@ -370,6 +412,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
@@ -387,7 +430,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalesTax-SalesTaxTests/Pods-SalesTax-SalesTaxTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xtzmaster-xtzmasterTests/Pods-xtzmaster-xtzmasterTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		663AF04A599C353A826D4C99 /* [CP] Embed Pods Frameworks */ = {
@@ -398,9 +441,10 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-xtzmaster/Pods-xtzmaster-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
@@ -418,6 +462,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
@@ -431,7 +476,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xtzmaster/Pods-xtzmaster-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6F0ACD00797BDB8E850EF972 /* [CP] Check Pods Manifest.lock */ = {
@@ -449,7 +494,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SalesTax-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-xtzmaster-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -489,7 +534,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SalesTax-SalesTaxTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-xtzmaster-xtzmasterTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -506,14 +551,17 @@
 				911FA56C21CF9F4600D6639E /* GetBakingInfoUseCase.swift in Sources */,
 				911FA55B21CCF7A100D6639E /* AccountProvider.swift in Sources */,
 				85070671219A236F0055BCAF /* EntranceViewController.swift in Sources */,
+				9135B90321D8A6820077ED46 /* DashboardViewModel.swift in Sources */,
 				911FA56A21CE532E00D6639E /* GetAccountInfoUseCase.swift in Sources */,
 				917AC24F21C910D800E9CA48 /* XTZMasterAPI.swift in Sources */,
 				8507066F219A236F0055BCAF /* AppDelegate.swift in Sources */,
 				8539AD04219A2A240027E6DB /* R.generated.swift in Sources */,
 				911FA55D21CCF8CB00D6639E /* Account.swift in Sources */,
 				60354FEE7409E3F4B9F71D67 /* HomeViewController.swift in Sources */,
+				911CB4D921DDE6C200725444 /* UIViewController+Extension.swift in Sources */,
 				603542E5B8485C3D51106122 /* SettingsViewController.swift in Sources */,
 				60354053265B06B630174F00 /* DashboardViewController.swift in Sources */,
+				911CB4D621DDE1C600725444 /* DashboardAddressCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,7 +720,7 @@
 		};
 		85070689219A23700055BCAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C07127EB9E2E4FBF1672AF05 /* Pods-SalesTax.debug.xcconfig */;
+			baseConfigurationReference = 96A2575403FC99E42CDD695B /* Pods-xtzmaster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -690,7 +738,7 @@
 		};
 		8507068A219A23700055BCAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DE94018F65A6369C4760FC3 /* Pods-SalesTax.release.xcconfig */;
+			baseConfigurationReference = 0F3E3E769F2BFC14375DD140 /* Pods-xtzmaster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -708,7 +756,7 @@
 		};
 		8507068C219A23700055BCAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F63774A490BCF75DBFDA328 /* Pods-SalesTax-SalesTaxTests.debug.xcconfig */;
+			baseConfigurationReference = 2498282AB9DA00E92BAD91B9 /* Pods-xtzmaster-xtzmasterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -728,7 +776,7 @@
 		};
 		8507068D219A23700055BCAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80B5EF9B1878E09A97B7BF13 /* Pods-SalesTax-SalesTaxTests.release.xcconfig */;
+			baseConfigurationReference = DCC0BF8FE81805D9A443227D /* Pods-xtzmaster-xtzmasterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

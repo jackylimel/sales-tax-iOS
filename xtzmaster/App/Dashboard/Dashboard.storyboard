@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,16 +14,62 @@
         <!--Dashboard View Controller-->
         <scene sceneID="Jh6-uL-zA1">
             <objects>
-                <viewController storyboardIdentifier="DashboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Cp-D7-Fxh" customClass="DashboardViewController" customModule="SalesTax" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Cp-D7-Fxh" customClass="DashboardViewController" customModule="xtzmaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xq0-xj-RmU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5kb-17-GL0" userLabel="header">
+                                <rect key="frame" x="20" y="40" width="335" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your all-in-one stats board" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMb-U3-9J9">
+                                        <rect key="frame" x="20" y="10" width="295" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="xPW-Ou-Svx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="cell"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4r6-tz-l3s"/>
+                                    <constraint firstAttribute="trailing" secondItem="yMb-U3-9J9" secondAttribute="trailing" constant="20" id="5Rx-Iw-vSh"/>
+                                    <constraint firstItem="yMb-U3-9J9" firstAttribute="centerY" secondItem="5kb-17-GL0" secondAttribute="centerY" id="6z3-vZ-Uvi"/>
+                                    <constraint firstItem="yMb-U3-9J9" firstAttribute="leading" secondItem="5kb-17-GL0" secondAttribute="leading" constant="20" id="Hmd-Pm-i5l"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v6T-Aw-8HP">
+                                <rect key="frame" x="20" y="110" width="335" height="537"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v6T-Aw-8HP" firstAttribute="top" secondItem="yMb-U3-9J9" secondAttribute="bottom" constant="20" id="Dwb-sF-zNx"/>
+                            <constraint firstItem="5kb-17-GL0" firstAttribute="top" secondItem="TXx-ba-mQS" secondAttribute="top" constant="20" id="Tac-I5-cBs"/>
+                            <constraint firstItem="TXx-ba-mQS" firstAttribute="trailing" secondItem="v6T-Aw-8HP" secondAttribute="trailing" constant="20" id="d4k-4v-Ljb"/>
+                            <constraint firstItem="5kb-17-GL0" firstAttribute="leading" secondItem="TXx-ba-mQS" secondAttribute="leading" constant="20" id="dbU-Pu-Hho"/>
+                            <constraint firstItem="TXx-ba-mQS" firstAttribute="trailing" secondItem="5kb-17-GL0" secondAttribute="trailing" constant="20" id="kCp-6o-JgJ"/>
+                            <constraint firstItem="v6T-Aw-8HP" firstAttribute="leading" secondItem="TXx-ba-mQS" secondAttribute="leading" constant="20" id="mU4-60-a2R"/>
+                            <constraint firstItem="v6T-Aw-8HP" firstAttribute="bottom" secondItem="TXx-ba-mQS" secondAttribute="bottom" constant="-20" id="yeE-6i-0mo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TXx-ba-mQS"/>
                     </view>
+                    <connections>
+                        <outlet property="bakedAddressesTableView" destination="v6T-Aw-8HP" id="OhJ-zJ-mlX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0f-MI-1bp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="cell">
+            <color red="0.13725490196078433" green="0.24313725490196078" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

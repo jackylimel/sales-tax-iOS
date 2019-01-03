@@ -1,0 +1,6 @@
+framework module Pods_xtzmaster_xtzmasterTests {
+  umbrella header "Pods-xtzmaster-xtzmasterTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
