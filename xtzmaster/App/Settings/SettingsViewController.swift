@@ -22,15 +22,24 @@ class SettingsViewController: UIViewController {
   }
   
   private func setupData() {
-    items = [[SettingCellModel(imageName: "icon_twitter",
+    items = [[SettingCellModel(imageName: "icon-twitter",
                       title: NSLocalizedString("Twitter", comment: ""),
                       url: Constants.twitterURL),
-     SettingCellModel(imageName: "",
+     SettingCellModel(imageName: "icon-reddit",
                       title: NSLocalizedString("Reddit", comment: ""),
                       url: Constants.redditUrl),
-     SettingCellModel(imageName: "",
+     SettingCellModel(imageName: "icon-slack",
                       title: NSLocalizedString("Slack", comment: ""),
                       url: Constants.slackUrl)
+     ], [
+      SettingCellModel(imageName: "icon-email",
+                       title: NSLocalizedString("Email", comment: ""),
+                       url: Constants.mailUrl,
+                       action: SettingCellAction.mail)
+     ], [
+      SettingCellModel(imageName: "icon-info",
+                       title: NSLocalizedString("FAQ", comment: ""),
+                       url: Constants.faqUrl)
      ]]
   }
 }
@@ -62,9 +71,15 @@ extension SettingsViewController: UITableViewDelegate {
     cell?.setSelected(false, animated: true)
     
    let model = items[indexPath.section][indexPath.row]
-   guard let url = model.url else {
-     return
-   }
-   self.showWebPage(url: url)
+   self.executeAction(url: model.url, action: model.action)
+  }
+  
+  private func executeAction(url: URL, action: SettingCellAction) {
+    switch action {
+    case .webpage:
+      self.showWebPage(url: url)
+    case .mail:
+      UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
   }
 }
