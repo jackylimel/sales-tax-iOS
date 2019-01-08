@@ -1,5 +1,6 @@
 import UIKit
 import MBProgressHUD
+import SafariServices
 
 extension UIViewController {
   func showLoading() {
@@ -23,5 +24,11 @@ extension UIViewController {
     hud.label.numberOfLines = 0
     hud.label.text = message
     hud.hide(animated: true, afterDelay: 1)
+  }
+  
+  func showWebPage(url: URL) {
+    let config = SFSafariViewController.Configuration()
+    let vc = SFSafariViewController(url: url, configuration: config)
+    present(vc, animated: true)
   }
 }
