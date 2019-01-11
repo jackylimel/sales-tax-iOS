@@ -14,6 +14,7 @@ class DashboardViewController: UIViewController {
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     self.tabBarItem = UITabBarItem(title: "Dashboard", image: R.image.dashboard(), selectedImage: R.image.dashboardSelected())
+    self.navigationItem.title = "Dashboard"
   }
   
   override func viewDidLoad() {
@@ -29,7 +30,6 @@ class DashboardViewController: UIViewController {
       .disposed(by: disposeBag)
     bakedAddressesTableView.dataSource = self
     bakedAddressesTableView.delegate = self
-    bakedAddressesTableView.register(DashboardAddressCell.self, forCellReuseIdentifier: "DashboardAddressCell")
   }
 }
 
@@ -60,8 +60,8 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "DashboardAddressCell", for: indexPath) as! DashboardAddressCell
     let address = bakedAddresses[indexPath.section]
-    cell.backgroundColor = R.color.cell()
-    cell.textLabel?.textColor = UIColor.white
+    cell.backgroundColor = R.color.grey()
+    cell.textLabel?.textColor = R.color.cell()
     cell.textLabel?.text = address
     cell.textLabel?.numberOfLines = 0
     cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping

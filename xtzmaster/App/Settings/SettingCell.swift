@@ -6,10 +6,6 @@ class SettingCell: UITableViewCell {
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var separator: UIView!
   
-  override func layoutSubviews() {
-    separator.backgroundColor = UIColor(red: 234, green: 234, blue: 234)
-  }
-  
   var model: SettingCellModel? {
     didSet {
       guard let newModel = model else { return }
