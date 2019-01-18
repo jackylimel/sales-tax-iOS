@@ -14,4 +14,11 @@ class BakingDetailViewModel {
 //      .subscribe()
 //      .disposed(by: disposeBag)
   }
+  
+  func createCellViewModels(with delegator: Delegator) -> [BakingDetailCellViewModel] {
+    let currentBalance = BakingDetailCellViewModel(title: "Current Balance", value: "0")
+    let rewardPaidOut = BakingDetailCellViewModel(title: "Reward Paid-out?", value: "Yes")
+    let currentCycle = BakingDetailCellViewModel(title: "Current Cycle", value: "66")
+    return [currentBalance, rewardPaidOut, currentCycle]
+  }
 }

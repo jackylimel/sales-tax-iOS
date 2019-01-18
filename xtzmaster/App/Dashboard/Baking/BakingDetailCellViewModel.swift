@@ -1,4 +1,4 @@
 struct BakingDetailCellViewModel {
   let title: String
-  let description: String
+  let value: String
 }

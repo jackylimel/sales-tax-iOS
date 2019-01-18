@@ -15,6 +15,24 @@ class BakingDetailViewController: UIViewController {
   }
   
   override func viewDidLoad() {
-    print(delegator)
+    collectionView.delegate = self
+    collectionView.dataSource = self
+    
+    if let delegator = self.delegator {
+      cellViewModels = viewModel.createCellViewModels(with: delegator)
+      collectionView.reloadData()
+    }
+  }
+}
+
+extension BakingDetailViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return cellViewModels.count
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.bakingDetailCellView, for: indexPath)! as BakingDetailCellView
+    cell.update(with: cellViewModels[indexPath.row])
+    return cell
   }
 }
