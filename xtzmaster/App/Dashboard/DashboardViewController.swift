@@ -8,7 +8,7 @@ class DashboardViewController: UIViewController {
   
   @IBOutlet weak var bakedAddressesTableView: UITableView!
   
-  var bakedAddresses: [String] = []
+  var delegators: [Delegator] = []
   let dashboardViewModel = DashboardViewModel()
   
   required init?(coder aDecoder: NSCoder) {
@@ -21,9 +21,9 @@ class DashboardViewController: UIViewController {
     super.viewDidLoad()
     showLoading()
     
-    dashboardViewModel.loadAddresses()
-      .subscribe(onNext: { [weak self] addresses in
-        self?.bakedAddresses.append(contentsOf: addresses)
+    dashboardViewModel.getAllDelegators()
+      .subscribe(onNext: { [weak self] delegators in
+        self?.delegators.append(contentsOf: delegators)
         self?.hideLoading()
         self?.bakedAddressesTableView.reloadData()
       })
@@ -36,7 +36,7 @@ class DashboardViewController: UIViewController {
 extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
   
   func numberOfSections(in tableView: UITableView) -> Int {
-    return bakedAddresses.count
+    return delegators.count
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,11 +58,11 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "DashboardAddressCell", for: indexPath) as! DashboardAddressCell
-    let address = bakedAddresses[indexPath.section]
+    let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.dashboardDelegatorCell, for: indexPath)!
+    let delegator = delegators[indexPath.section]
     cell.backgroundColor = R.color.grey()
     cell.textLabel?.textColor = R.color.cell()
-    cell.textLabel?.text = address
+    cell.textLabel?.text = delegator.address
     cell.textLabel?.numberOfLines = 0
     cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
     cell.textLabel?.sizeToFit()

@@ -13,49 +13,10 @@ struct AccountProvider {
     return executeRequest(request: request, mapping: mapping)
   }
   
-  func getStaking(address: String) -> Observable<String> {
-    let request = provider.rx.request(.getStakingBalance(accountAddress: address))
-    let mapping = { (response: Response) -> Observable<String> in
-      do {
-        if let json = try response.mapJSON() as? [String] {
-          return Observable.just(json.first ?? "0")
-        }
-        return Observable.just("0")
-      } catch {
-        return Observable.just("0")
-      }
-    }
-    
-    return executeRequest(request: request, mapping: mapping)
-  }
-  
-  func getAllBakedAddress(bakerAddress: String) -> Observable<[String]> {
-    let request = provider.rx.request(.getAllBakedAddresses(bakerAddress: bakerAddress))
-    let mapping = { (response: Response) -> Observable<[String]> in
-      do {
-        if let json = try response.mapJSON() as? [String] {
-          return Observable.just(json)
-        }
-        return Observable.just([])
-      } catch {
-        return Observable.just([])
-      }
-    }
-    return executeRequest(request: request, mapping: mapping)
-  }
-  
-  func getCurrentCycle() -> Observable<Int> {
-    let request = provider.rx.request(.getHead())
-    let mapping = { (response: Response) -> Observable<Int> in
-      do {
-        if let json = try response.mapJSON() as? [String: Any],
-          let level = json["level"] as? Int {
-          return Observable.just(level / 4096)
-        }
-        return Observable.just(0)
-      } catch {
-        return Observable.just(0)
-      }
+  func getAllDelegators() -> Observable<[Delegator]> {
+    let request = provider.rx.request(.getDelegators)
+    let mapping = { response -> Observable<[Delegator]> in
+      self.mapResponseTo(response: response)
     }
     return executeRequest(request: request, mapping: mapping)
   }

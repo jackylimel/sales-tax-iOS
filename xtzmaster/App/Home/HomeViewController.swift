@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    usecase.getAccount(by: "tz1KfEsrtDaA1sX7vdM4qmEPWuSytuqCDp5j")
+    usecase.getRootAccount(by: "tz1KfEsrtDaA1sX7vdM4qmEPWuSytuqCDp5j")
       .subscribe(onNext: { account in
         print(account)
       }, onError: { error in

@@ -23,7 +23,6 @@
 		8539AD11219A68FD0027E6DB /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8539AD10219A68FD0027E6DB /* Dashboard.storyboard */; };
 		8DCA0BA6BA717E3CCF25FFD0 /* Pods_SalesTax_SalesTaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577FD59B0853A3EF1CBCAC7A /* Pods_SalesTax_SalesTaxTests.framework */; };
 		911CB4D221DDDF8700725444 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911CB4D121DDDF8700725444 /* Colors.xcassets */; };
-		911CB4D621DDE1C600725444 /* DashboardAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CB4D521DDE1C600725444 /* DashboardAddressCell.swift */; };
 		911CB4D921DDE6C200725444 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CB4D821DDE6C200725444 /* UIViewController+Extension.swift */; };
 		911FA55B21CCF7A100D6639E /* AccountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911FA55A21CCF7A100D6639E /* AccountProvider.swift */; };
 		911FA55D21CCF8CB00D6639E /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911FA55C21CCF8CB00D6639E /* Account.swift */; };
@@ -34,7 +33,14 @@
 		914DC95521E4712000C5126B /* SettingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DC95421E4712000C5126B /* SettingCellViewModel.swift */; };
 		914DC95821E4739300C5126B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DC95721E4739300C5126B /* Constants.swift */; };
 		914DC95A21E47D3400C5126B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DC95921E47D3400C5126B /* UIColor+Extension.swift */; };
+		91536AA121F1CEBF008F10B3 /* Delegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91536AA021F1CEBF008F10B3 /* Delegator.swift */; };
+		91536AA321F1D06A008F10B3 /* DashboardDelegatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91536AA221F1D06A008F10B3 /* DashboardDelegatorCell.swift */; };
 		917AC24F21C910D800E9CA48 /* XTZMasterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917AC24E21C910D800E9CA48 /* XTZMasterAPI.swift */; };
+		919FFAF521E84FBC00FC679A /* BakingDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919FFAF421E84FBC00FC679A /* BakingDetail.storyboard */; };
+		919FFAF721E84FCD00FC679A /* BakingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FFAF621E84FCD00FC679A /* BakingDetailViewController.swift */; };
+		919FFAFB21E9A5F500FC679A /* BakingDetailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FFAFA21E9A5F500FC679A /* BakingDetailCellView.swift */; };
+		919FFAFD21E9A74900FC679A /* BakingDetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FFAFC21E9A74900FC679A /* BakingDetailCellViewModel.swift */; };
+		919FFAFF21E9A8B400FC679A /* BakingDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FFAFE21E9A8B400FC679A /* BakingDetailViewModel.swift */; };
 		D210B3799890969B22A7ADD4 /* Pods_xtzmaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDA27FB62DFBDC0D29B1896 /* Pods_xtzmaster.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +80,6 @@
 		8539AD0D219A57490027E6DB /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		8539AD10219A68FD0027E6DB /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		911CB4D121DDDF8700725444 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		911CB4D521DDE1C600725444 /* DashboardAddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAddressCell.swift; sourceTree = "<group>"; };
 		911CB4D821DDE6C200725444 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		911FA55A21CCF7A100D6639E /* AccountProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProvider.swift; sourceTree = "<group>"; };
 		911FA55C21CCF8CB00D6639E /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -85,7 +90,14 @@
 		914DC95421E4712000C5126B /* SettingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCellViewModel.swift; sourceTree = "<group>"; };
 		914DC95721E4739300C5126B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		914DC95921E47D3400C5126B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		91536AA021F1CEBF008F10B3 /* Delegator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegator.swift; sourceTree = "<group>"; };
+		91536AA221F1D06A008F10B3 /* DashboardDelegatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDelegatorCell.swift; sourceTree = "<group>"; };
 		917AC24E21C910D800E9CA48 /* XTZMasterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTZMasterAPI.swift; sourceTree = "<group>"; };
+		919FFAF421E84FBC00FC679A /* BakingDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BakingDetail.storyboard; sourceTree = "<group>"; };
+		919FFAF621E84FCD00FC679A /* BakingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailViewController.swift; sourceTree = "<group>"; };
+		919FFAFA21E9A5F500FC679A /* BakingDetailCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailCellView.swift; sourceTree = "<group>"; };
+		919FFAFC21E9A74900FC679A /* BakingDetailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailCellViewModel.swift; sourceTree = "<group>"; };
+		919FFAFE21E9A8B400FC679A /* BakingDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailViewModel.swift; sourceTree = "<group>"; };
 		96A2575403FC99E42CDD695B /* Pods-xtzmaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xtzmaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xtzmaster/Pods-xtzmaster.debug.xcconfig"; sourceTree = "<group>"; };
 		C07127EB9E2E4FBF1672AF05 /* Pods-SalesTax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax.debug.xcconfig"; sourceTree = "<group>"; };
 		CEDA27FB62DFBDC0D29B1896 /* Pods_xtzmaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xtzmaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,10 +222,11 @@
 		8539AD0F219A68ED0027E6DB /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				919FFAF321E84E9C00FC679A /* Baking */,
 				8539AD10219A68FD0027E6DB /* Dashboard.storyboard */,
 				6035459D706FE574EB0699E1 /* DashboardViewController.swift */,
 				9135B90221D8A6820077ED46 /* DashboardViewModel.swift */,
-				911CB4D521DDE1C600725444 /* DashboardAddressCell.swift */,
+				91536AA221F1D06A008F10B3 /* DashboardDelegatorCell.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -274,8 +287,21 @@
 			isa = PBXGroup;
 			children = (
 				911FA55C21CCF8CB00D6639E /* Account.swift */,
+				91536AA021F1CEBF008F10B3 /* Delegator.swift */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		919FFAF321E84E9C00FC679A /* Baking */ = {
+			isa = PBXGroup;
+			children = (
+				919FFAF421E84FBC00FC679A /* BakingDetail.storyboard */,
+				919FFAF621E84FCD00FC679A /* BakingDetailViewController.swift */,
+				919FFAFE21E9A8B400FC679A /* BakingDetailViewModel.swift */,
+				919FFAFA21E9A5F500FC679A /* BakingDetailCellView.swift */,
+				919FFAFC21E9A74900FC679A /* BakingDetailCellViewModel.swift */,
+			);
+			path = Baking;
 			sourceTree = "<group>";
 		};
 		B461980343B0B2955D1A8DE9 /* Frameworks */ = {
@@ -380,6 +406,7 @@
 				85070676219A23700055BCAF /* Assets.xcassets in Resources */,
 				85070674219A236F0055BCAF /* Entrance.storyboard in Resources */,
 				8539AD09219A54710027E6DB /* Home.storyboard in Resources */,
+				919FFAF521E84FBC00FC679A /* BakingDetail.storyboard in Resources */,
 				8539AD0E219A57490027E6DB /* Settings.storyboard in Resources */,
 				911CB4D221DDDF8700725444 /* Colors.xcassets in Resources */,
 			);
@@ -570,8 +597,10 @@
 				914DC95A21E47D3400C5126B /* UIColor+Extension.swift in Sources */,
 				85070671219A236F0055BCAF /* EntranceViewController.swift in Sources */,
 				9135B90321D8A6820077ED46 /* DashboardViewModel.swift in Sources */,
+				91536AA121F1CEBF008F10B3 /* Delegator.swift in Sources */,
 				911FA56A21CE532E00D6639E /* GetAccountInfoUseCase.swift in Sources */,
 				917AC24F21C910D800E9CA48 /* XTZMasterAPI.swift in Sources */,
+				919FFAF721E84FCD00FC679A /* BakingDetailViewController.swift in Sources */,
 				8507066F219A236F0055BCAF /* AppDelegate.swift in Sources */,
 				8539AD04219A2A240027E6DB /* R.generated.swift in Sources */,
 				914DC95121E46EC000C5126B /* SettingCell.swift in Sources */,
@@ -579,8 +608,11 @@
 				60354FEE7409E3F4B9F71D67 /* HomeViewController.swift in Sources */,
 				911CB4D921DDE6C200725444 /* UIViewController+Extension.swift in Sources */,
 				603542E5B8485C3D51106122 /* SettingsViewController.swift in Sources */,
+				919FFAFB21E9A5F500FC679A /* BakingDetailCellView.swift in Sources */,
 				60354053265B06B630174F00 /* DashboardViewController.swift in Sources */,
-				911CB4D621DDE1C600725444 /* DashboardAddressCell.swift in Sources */,
+				91536AA321F1D06A008F10B3 /* DashboardDelegatorCell.swift in Sources */,
+				919FFAFF21E9A8B400FC679A /* BakingDetailViewModel.swift in Sources */,
+				919FFAFD21E9A74900FC679A /* BakingDetailCellViewModel.swift in Sources */,
 				914DC95521E4712000C5126B /* SettingCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
