@@ -4,8 +4,9 @@ import RxSwift
 class BakingDetailViewController: UIViewController {
   
   @IBOutlet var collectionView: UICollectionView!
+  
   var cellViewModels: [BakingDetailCellViewModel] = []
-  var accountAddress: String?
+  var delegator: Delegator?
   let viewModel = BakingDetailViewModel()
   
   required init?(coder aDecoder: NSCoder) {
@@ -14,5 +15,6 @@ class BakingDetailViewController: UIViewController {
   }
   
   override func viewDidLoad() {
+    print(delegator)
   }
 }

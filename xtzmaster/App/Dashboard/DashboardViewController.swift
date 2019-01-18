@@ -6,7 +6,7 @@ import MBProgressHUD
 class DashboardViewController: UIViewController {
   private var disposeBag: DisposeBag = DisposeBag()
   
-  @IBOutlet weak var bakedAddressesTableView: UITableView!
+  @IBOutlet weak var delegatorsTableView: UITableView!
   
   var delegators: [Delegator] = []
   let dashboardViewModel = DashboardViewModel()
@@ -22,14 +22,29 @@ class DashboardViewController: UIViewController {
     showLoading()
     
     dashboardViewModel.getAllDelegators()
-      .subscribe(onNext: { [weak self] delegators in
-        self?.delegators.append(contentsOf: delegators)
-        self?.hideLoading()
-        self?.bakedAddressesTableView.reloadData()
-      })
+      .subscribe(
+        onNext: { [weak self] delegators in
+          self?.delegators.append(contentsOf: delegators)
+          self?.hideLoading()
+          self?.delegatorsTableView.reloadData()
+        },
+        onError: { [weak self] error in
+          self?.hideLoading()
+          self?.showTipMessage(message: error.localizedDescription)
+        }
+      )
       .disposed(by: disposeBag)
-    bakedAddressesTableView.dataSource = self
-    bakedAddressesTableView.delegate = self
+    delegatorsTableView.dataSource = self
+    delegatorsTableView.delegate = self
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == R.segue.dashboardViewController.showBakingDetail.identifier {
+      if let viewController = segue.destination as? BakingDetailViewController,
+         let indexPath = sender as? IndexPath {
+        viewController.delegator = delegators[indexPath.row]
+      }
+    }
   }
 }
 
@@ -60,19 +75,12 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.dashboardDelegatorCell, for: indexPath)!
     let delegator = delegators[indexPath.section]
-    cell.backgroundColor = R.color.grey()
-    cell.textLabel?.textColor = R.color.cell()
-    cell.textLabel?.text = delegator.address
-    cell.textLabel?.numberOfLines = 0
-    cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-    cell.textLabel?.sizeToFit()
-    cell.selectionStyle = .none
+    cell.setAddress(address: delegator.address)
     return cell
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let cell = tableView.cellForRow(at: indexPath)
-    cell?.setSelected(false, animated: false)
+    performSegue(withIdentifier: R.segue.dashboardViewController.showBakingDetail, sender: indexPath)
   }
 }
 

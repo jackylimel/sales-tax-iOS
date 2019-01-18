@@ -9,17 +9,17 @@ enum XTZMasterAPI {
 
 extension XTZMasterAPI: TargetType {
   var baseURL: URL {
-    return URL(string: "https://api.xtzmaster.com")!
+    return URL(string: "https://api.xtzmaster.com/v1")!
   }
   
   var path: String {
     switch self {
     case .getAccount:
-      return "/v1/node_account/index.php"
+      return "/node_account/index.php"
     case .getRewardSplit:
-      return "/v1/rewards_split/"
+      return "/rewards_split/"
     case .getDelegators:
-      return "/get_delegators.php"
+      return "/delegators/index.php"
     }
   }
   
