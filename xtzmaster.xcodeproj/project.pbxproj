@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0639A61BCA370C3360A9142B /* Pods_SalesTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0DC2E282A4ABE78EFD7159 /* Pods_SalesTax.framework */; };
 		392EFA0DC70B7B6BBC9F6529 /* Pods_xtzmaster_xtzmasterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD87B3CA81B323970C815BA /* Pods_xtzmaster_xtzmasterTests.framework */; };
 		60354053265B06B630174F00 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6035459D706FE574EB0699E1 /* DashboardViewController.swift */; };
 		603542E5B8485C3D51106122 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60354AA916F24670E4F79C38 /* SettingsViewController.swift */; };
@@ -109,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0639A61BCA370C3360A9142B /* Pods_SalesTax.framework in Frameworks */,
 				D210B3799890969B22A7ADD4 /* Pods_xtzmaster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,17 +268,9 @@
 			children = (
 				917AC24D21C9106B00E9CA48 /* DataModel */,
 				9143E52321C9153C00B79D27 /* Provider */,
-				917AC24C21C9106100E9CA48 /* Repository */,
 				917AC24E21C910D800E9CA48 /* XTZMasterAPI.swift */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		917AC24C21C9106100E9CA48 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 		917AC24D21C9106B00E9CA48 /* DataModel */ = {
