@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -62,7 +63,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uWO-pq-s95">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="563"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e4l-vz-CRM">
                                     <size key="itemSize" width="178" height="244"/>
@@ -78,22 +79,29 @@
                                             <rect key="frame" x="0.0" y="0.0" width="178" height="244"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUK-Y4-s0m" userLabel="title">
-                                                    <rect key="frame" x="68" y="34" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUK-Y4-s0m" userLabel="title">
+                                                    <rect key="frame" x="20" y="20" width="138" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcX-5K-Wuk" userLabel="value">
-                                                    <rect key="frame" x="68" y="104" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcX-5K-Wuk" userLabel="value">
+                                                    <rect key="frame" x="20" y="61" width="138" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" name="grey"/>
+                                        <constraints>
+                                            <constraint firstItem="RUK-Y4-s0m" firstAttribute="top" secondItem="wUc-F6-ow9" secondAttribute="top" constant="20" id="L2f-hh-0B4"/>
+                                            <constraint firstAttribute="trailing" secondItem="hcX-5K-Wuk" secondAttribute="trailing" constant="20" id="Nth-ne-KCi"/>
+                                            <constraint firstItem="RUK-Y4-s0m" firstAttribute="leading" secondItem="wUc-F6-ow9" secondAttribute="leading" constant="20" id="P4W-Ch-PLS"/>
+                                            <constraint firstItem="hcX-5K-Wuk" firstAttribute="top" secondItem="RUK-Y4-s0m" secondAttribute="bottom" constant="20" id="UNp-sL-MCJ"/>
+                                            <constraint firstItem="hcX-5K-Wuk" firstAttribute="leading" secondItem="wUc-F6-ow9" secondAttribute="leading" constant="20" id="jGi-eW-36U"/>
+                                            <constraint firstAttribute="trailing" secondItem="RUK-Y4-s0m" secondAttribute="trailing" constant="20" id="qnK-rR-VHj"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="titleLabel" destination="RUK-Y4-s0m" id="hUa-Bw-qT2"/>
                                             <outlet property="valueLabel" destination="hcX-5K-Wuk" id="HNK-SP-V5A"/>
@@ -106,8 +114,8 @@
                         <constraints>
                             <constraint firstItem="uWO-pq-s95" firstAttribute="leading" secondItem="BmM-Mm-QGY" secondAttribute="leading" id="VDV-LV-Th4"/>
                             <constraint firstItem="BmM-Mm-QGY" firstAttribute="trailing" secondItem="uWO-pq-s95" secondAttribute="trailing" id="Vb4-ED-roK"/>
-                            <constraint firstItem="uWO-pq-s95" firstAttribute="top" secondItem="BmM-Mm-QGY" secondAttribute="top" id="gPV-qs-Znm"/>
-                            <constraint firstItem="BmM-Mm-QGY" firstAttribute="bottom" secondItem="uWO-pq-s95" secondAttribute="bottom" id="rJg-XE-Z8T"/>
+                            <constraint firstItem="uWO-pq-s95" firstAttribute="top" secondItem="BmM-Mm-QGY" secondAttribute="top" constant="20" id="gPV-qs-Znm"/>
+                            <constraint firstItem="BmM-Mm-QGY" firstAttribute="bottom" secondItem="uWO-pq-s95" secondAttribute="bottom" constant="20" id="rJg-XE-Z8T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BmM-Mm-QGY"/>
                     </view>
@@ -136,4 +144,9 @@
             <point key="canvasLocation" x="-500" y="-191"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="grey">
+            <color red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

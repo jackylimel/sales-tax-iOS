@@ -19,6 +19,12 @@ class BakingDetailViewModel {
     let currentBalance = BakingDetailCellViewModel(title: "Current Balance", value: String(delegator.balance))
     let rewardPaidOut = BakingDetailCellViewModel(title: "Reward Paid-out?", value: "Yes")
     let currentCycle = BakingDetailCellViewModel(title: "Current Cycle", value: "66")
-    return [currentBalance, rewardPaidOut, currentCycle]
+    let daysToNextReward = BakingDetailCellViewModel(title: "To next reward", value: "2 days 7 hours")
+    let daysWith = BakingDetailCellViewModel(title: "With XTZMaster", value: "140 days")
+    let joinedCycle = BakingDetailCellViewModel(title: "Joined Cycle", value: delegator.joinedCycle)
+    let feeRate = BakingDetailCellViewModel(title: "Fee rate", value: "8.0%")
+    let unlockedCycle = BakingDetailCellViewModel(title: "Unlocked Cycle", value: "60")
+    let balanceByUnlockedCycle = BakingDetailCellViewModel(title: "Balance By Cycle 60", value: "327,123.78")
+    return [currentBalance, rewardPaidOut, currentCycle, daysToNextReward, daysWith, joinedCycle, feeRate, unlockedCycle, balanceByUnlockedCycle]
   }
 }
