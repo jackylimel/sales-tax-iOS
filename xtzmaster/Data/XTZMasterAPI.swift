@@ -3,7 +3,7 @@ import Moya
 
 enum XTZMasterAPI {
   case getAccount(accountAddress: String)
-  case getRewardSplit(accountAddress: String, delegatorAddress: String, cycle: Int)
+  case getRewardSplit(bakerAddress: String, delegatorAddress: String, cycle: Int)
   case getDelegators
 }
 
@@ -17,7 +17,7 @@ extension XTZMasterAPI: TargetType {
     case .getAccount:
       return "/node_account/index.php"
     case .getRewardSplit:
-      return "/rewards_split/"
+      return "/rewards_split/index.php"
     case .getDelegators:
       return "/delegators/index.php"
     }
@@ -33,8 +33,8 @@ extension XTZMasterAPI: TargetType {
       return .requestParameters(parameters: [:], encoding: URLEncoding.queryString)
     case let .getAccount(accountAddress):
       return .requestParameters(parameters: ["address": accountAddress], encoding: URLEncoding.queryString)
-    case let .getRewardSplit(accountAddress, delegatorAddress, cycle):
-      return .requestParameters(parameters: ["baker": accountAddress, "delegator": delegatorAddress, "cycle": cycle], encoding: URLEncoding.queryString)
+    case let .getRewardSplit(bakerAddress, delegatorAddress, cycle):
+      return .requestParameters(parameters: ["baker": bakerAddress, "delegator": delegatorAddress, "cycle": cycle], encoding: URLEncoding.queryString)
     }
   }
   

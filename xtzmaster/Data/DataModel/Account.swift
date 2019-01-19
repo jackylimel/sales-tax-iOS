@@ -14,6 +14,10 @@ struct Account: Codable {
     case cycle
     case staking = "staking_balance"
   }
+  
+  var address: String {
+    return name.tz
+  }
 }
 
 struct AccountName: Codable {

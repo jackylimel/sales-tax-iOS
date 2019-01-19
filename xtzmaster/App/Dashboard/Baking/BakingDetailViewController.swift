@@ -8,6 +8,7 @@ class BakingDetailViewController: UIViewController {
   var cellViewModels: [BakingDetailCellViewModel] = []
   var delegator: Delegator?
   let viewModel = BakingDetailViewModel()
+  let disposeBag = DisposeBag()
   
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
@@ -19,8 +20,15 @@ class BakingDetailViewController: UIViewController {
     collectionView.dataSource = self
     
     if let delegator = self.delegator {
-      cellViewModels = viewModel.createCellViewModels(with: delegator)
-      collectionView.reloadData()
+      self.showLoading()
+      viewModel.createCellViewModels(with: delegator)
+        .observeOn(MainScheduler.instance)
+        .subscribe(onNext: { [unowned self] in
+          self.cellViewModels = $0
+          self.hideLoading()
+          self.collectionView.reloadData()
+        })
+        .disposed(by: disposeBag)
     }
   }
 }

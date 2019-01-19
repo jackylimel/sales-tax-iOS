@@ -39,6 +39,8 @@
 		919FFAFB21E9A5F500FC679A /* BakingDetailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FFAFA21E9A5F500FC679A /* BakingDetailCellView.swift */; };
 		919FFAFD21E9A74900FC679A /* BakingDetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FFAFC21E9A74900FC679A /* BakingDetailCellViewModel.swift */; };
 		919FFAFF21E9A8B400FC679A /* BakingDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FFAFE21E9A8B400FC679A /* BakingDetailViewModel.swift */; };
+		91F3346D21F2AD35001CAC54 /* RewardSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F3346C21F2AD35001CAC54 /* RewardSplit.swift */; };
+		91F3346F21F2B26A001CAC54 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F3346E21F2B26A001CAC54 /* DataStore.swift */; };
 		D210B3799890969B22A7ADD4 /* Pods_xtzmaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDA27FB62DFBDC0D29B1896 /* Pods_xtzmaster.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +97,8 @@
 		919FFAFA21E9A5F500FC679A /* BakingDetailCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailCellView.swift; sourceTree = "<group>"; };
 		919FFAFC21E9A74900FC679A /* BakingDetailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailCellViewModel.swift; sourceTree = "<group>"; };
 		919FFAFE21E9A8B400FC679A /* BakingDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailViewModel.swift; sourceTree = "<group>"; };
+		91F3346C21F2AD35001CAC54 /* RewardSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardSplit.swift; sourceTree = "<group>"; };
+		91F3346E21F2B26A001CAC54 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		96A2575403FC99E42CDD695B /* Pods-xtzmaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xtzmaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xtzmaster/Pods-xtzmaster.debug.xcconfig"; sourceTree = "<group>"; };
 		C07127EB9E2E4FBF1672AF05 /* Pods-SalesTax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesTax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesTax/Pods-SalesTax.debug.xcconfig"; sourceTree = "<group>"; };
 		CEDA27FB62DFBDC0D29B1896 /* Pods_xtzmaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xtzmaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,6 +271,7 @@
 				917AC24D21C9106B00E9CA48 /* DataModel */,
 				9143E52321C9153C00B79D27 /* Provider */,
 				917AC24E21C910D800E9CA48 /* XTZMasterAPI.swift */,
+				91F3346E21F2B26A001CAC54 /* DataStore.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			children = (
 				911FA55C21CCF8CB00D6639E /* Account.swift */,
 				91536AA021F1CEBF008F10B3 /* Delegator.swift */,
+				91F3346C21F2AD35001CAC54 /* RewardSplit.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -590,6 +596,8 @@
 				8507066F219A236F0055BCAF /* AppDelegate.swift in Sources */,
 				8539AD04219A2A240027E6DB /* R.generated.swift in Sources */,
 				914DC95121E46EC000C5126B /* SettingCell.swift in Sources */,
+				91F3346F21F2B26A001CAC54 /* DataStore.swift in Sources */,
+				91F3346D21F2AD35001CAC54 /* RewardSplit.swift in Sources */,
 				911FA55D21CCF8CB00D6639E /* Account.swift in Sources */,
 				60354FEE7409E3F4B9F71D67 /* HomeViewController.swift in Sources */,
 				911CB4D921DDE6C200725444 /* UIViewController+Extension.swift in Sources */,

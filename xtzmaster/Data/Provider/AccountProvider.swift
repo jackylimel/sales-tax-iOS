@@ -3,7 +3,7 @@ import Moya
 import RxSwift
 
 struct AccountProvider {
-  let provider = MoyaProvider<XTZMasterAPI>()
+  let provider = MoyaProvider<XTZMasterAPI>(plugins: [NetworkLoggerPlugin()])
   
   func getAccount(address: String) -> Observable<Account> {
     let request = provider.rx.request(.getAccount(accountAddress: address))
@@ -16,6 +16,14 @@ struct AccountProvider {
   func getAllDelegators() -> Observable<[Delegator]> {
     let request = provider.rx.request(.getDelegators)
     let mapping = { response -> Observable<[Delegator]> in
+      self.mapResponseTo(response: response)
+    }
+    return executeRequest(request: request, mapping: mapping)
+  }
+  
+  func getRewardSplit(bakerAddress: String, delegatorAddress: String, cycle: Int) -> Observable<RewardSplit> {
+    let request = provider.rx.request(.getRewardSplit(bakerAddress: bakerAddress, delegatorAddress: delegatorAddress, cycle: cycle))
+    let mapping = { response -> Observable<RewardSplit> in
       self.mapResponseTo(response: response)
     }
     return executeRequest(request: request, mapping: mapping)
@@ -38,6 +46,7 @@ struct AccountProvider {
   private func mapResponseTo<T>(response: Response) -> Observable<T> where T: Codable {
     do {
       let filteredResponse = try response.filterSuccessfulStatusCodes()
+      print (try! response.mapJSON())
       return try Observable.just(JSONDecoder().decode(T.self, from: filteredResponse.data))
     } catch let error {
       return Observable.error(error)
