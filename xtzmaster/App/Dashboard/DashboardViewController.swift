@@ -42,7 +42,7 @@ class DashboardViewController: UIViewController {
     if segue.identifier == R.segue.dashboardViewController.showBakingDetail.identifier {
       if let viewController = segue.destination as? BakingDetailViewController,
          let indexPath = sender as? IndexPath {
-        viewController.delegator = delegators[indexPath.row]
+        viewController.delegator = delegators[indexPath.section]
       }
     }
   }
