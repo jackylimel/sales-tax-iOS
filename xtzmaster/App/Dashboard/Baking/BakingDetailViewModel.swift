@@ -7,7 +7,7 @@ class BakingDetailViewModel {
   func createCellViewModels(with delegator: Delegator) -> Observable<[BakingDetailCellViewModel]> {
     return bakingInfoUseCase
       .getRewardSplit(delegatorAddress: delegator.address)
-      .map { [unowned self] rewardSplit -> [BakingDetailCellViewModel] in
+      .map { rewardSplit -> [BakingDetailCellViewModel] in
         let currentBalance = BakingDetailCellViewModel(title: "Current Balance", value: String(delegator.balance))
         let rewardPaidOut = BakingDetailCellViewModel(title: "Reward Paid-out?", value: "Yes")
         let currentCycle = BakingDetailCellViewModel(title: "Current Cycle", value: String(rewardSplit.currentCycle))
