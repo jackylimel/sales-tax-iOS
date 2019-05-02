@@ -1,9 +1,9 @@
 struct Delegator: Codable {
-  let id: String
+  let id: Int
   let address: String
   let vip: String
   let joinedDate: String
-  let joinedCycle: String
+  let joinedCycle: Int
   let lastUpdate: String
   let created: String
   let balance: Double
@@ -17,5 +17,13 @@ struct Delegator: Codable {
     case joinedDate = "joined_date"
     case joinedCycle = "joined_cycle"
     case lastUpdate = "last_update"
+  }
+
+  func daysToNextReward() -> String {
+    return ""
+  }
+
+  func daysWithXTZMaster() -> String {
+    return ""
   }
 }

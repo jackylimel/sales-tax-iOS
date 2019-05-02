@@ -5,6 +5,7 @@ struct RewardSplit: Codable {
   let rewards: Double
   let feeRate: Double
   let currentCycle: Int
+  let rewardsBeforeFee: Double
   
   enum CodingKeys: String, CodingKey {
     case delegator
@@ -13,5 +14,6 @@ struct RewardSplit: Codable {
     case rewards
     case currentCycle = "current_cycle"
     case feeRate = "fee_rate"
+	case rewardsBeforeFee = "rewards_before_fee"
   }
 }
