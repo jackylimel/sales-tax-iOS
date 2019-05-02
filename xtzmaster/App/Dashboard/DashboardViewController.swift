@@ -5,7 +5,8 @@ import MBProgressHUD
 
 class DashboardViewController: UIViewController {
   private var disposeBag: DisposeBag = DisposeBag()
-  
+  private let searchController = UISearchController(searchResultsController: nil)
+
   @IBOutlet weak var delegatorsTableView: UITableView!
   
   var delegators: [Delegator] = []
@@ -16,10 +17,28 @@ class DashboardViewController: UIViewController {
     self.tabBarItem = UITabBarItem(title: "Dashboard", image: R.image.dashboard(), selectedImage: R.image.dashboardSelected())
     self.navigationItem.title = "Dashboard"
   }
+
+  // This is to fix the problem that search bar is not visible on launch
+  // https://stackoverflow.com/questions/46239883/show-search-bar-in-navigation-bar-without-scrolling-on-ios-11
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    navigationItem.hidesSearchBarWhenScrolling = false
+  }
+
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    navigationItem.hidesSearchBarWhenScrolling = true
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     showLoading()
+
+    searchController.searchResultsUpdater = self
+    searchController.obscuresBackgroundDuringPresentation = false
+    searchController.searchBar.placeholder = "Search Address"
+    navigationItem.searchController = searchController
+    definesPresentationContext = true
     
     dashboardViewModel.getAllDelegators()
       .subscribe(
@@ -82,6 +101,12 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     performSegue(withIdentifier: R.segue.dashboardViewController.showBakingDetail, sender: indexPath)
   }
+}
+
+extension DashboardViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+
+    }
 }
 
 
