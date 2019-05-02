@@ -26,4 +26,8 @@ struct Delegator: Codable {
   func daysWithXTZMaster() -> String {
     return ""
   }
+
+  var displayAddress: String {
+    return address.prefix(10) + "***************" + address.dropFirst(25)
+  }
 }

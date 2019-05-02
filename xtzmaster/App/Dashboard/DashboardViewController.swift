@@ -75,7 +75,7 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.dashboardDelegatorCell, for: indexPath)!
     let delegator = delegators[indexPath.section]
-    cell.setAddress(address: delegator.address)
+    cell.setAddress(address: delegator.displayAddress)
     return cell
   }
   
