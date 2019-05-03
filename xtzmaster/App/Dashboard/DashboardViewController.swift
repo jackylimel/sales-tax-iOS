@@ -10,6 +10,7 @@ class DashboardViewController: UIViewController {
   @IBOutlet weak var delegatorsTableView: UITableView!
   
   var delegators: [Delegator] = []
+  var filteredDelegators: [Delegator] = []
   let dashboardViewModel = DashboardViewModel()
   
   required init?(coder aDecoder: NSCoder) {
@@ -39,7 +40,11 @@ class DashboardViewController: UIViewController {
     searchController.searchBar.placeholder = "Search Address"
     navigationItem.searchController = searchController
     definesPresentationContext = true
-    
+
+    setupBinding()
+  }
+
+  private func setupBinding() {
     dashboardViewModel.getAllDelegators()
       .subscribe(
         onNext: { [weak self] delegators in
@@ -56,6 +61,22 @@ class DashboardViewController: UIViewController {
     delegatorsTableView.dataSource = self
     delegatorsTableView.delegate = self
   }
+
+    fileprivate func isFiltering() -> Bool {
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+
+    private func searchBarIsEmpty() -> Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+
+    fileprivate func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        filteredDelegators = delegators.filter({( delegator: Delegator) -> Bool in
+            return delegator.address.lowercased().contains(searchText.lowercased())
+        })
+
+        delegatorsTableView.reloadData()
+    }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == R.segue.dashboardViewController.showBakingDetail.identifier {
@@ -70,6 +91,9 @@ class DashboardViewController: UIViewController {
 extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
   
   func numberOfSections(in tableView: UITableView) -> Int {
+    if isFiltering() {
+      return filteredDelegators.count
+    }
     return delegators.count
   }
   
@@ -93,7 +117,12 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.dashboardDelegatorCell, for: indexPath)!
-    let delegator = delegators[indexPath.section]
+    let delegator: Delegator
+    if isFiltering() {
+        delegator = filteredDelegators[indexPath.section]
+    } else {
+        delegator = delegators[indexPath.section]
+    }
     cell.setAddress(address: delegator.displayAddress)
     return cell
   }
@@ -105,8 +134,6 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension DashboardViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-
+        filterContentForSearchText(searchController.searchBar.text!)
     }
 }
-
-
