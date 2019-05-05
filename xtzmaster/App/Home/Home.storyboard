@@ -48,6 +48,9 @@
                                 <state key="normal" title="Start Delegation">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Rng-Ec-Kx7" kind="show" identifier="ShowDelegationViewController" id="VKQ-NL-6o6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -67,7 +70,71 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-111.2" y="-965.6671664167917"/>
+            <point key="canvasLocation" x="-257" y="-965"/>
+        </scene>
+        <!--Delegation View Controller-->
+        <scene sceneID="x0h-F5-hko">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBf-4b-GWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Rng-Ec-Kx7" customClass="DelegationViewController" customModule="xtzmaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f9U-ie-GDr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z5s-vF-Vwx">
+                                <rect key="frame" x="40" y="148" width="295" height="295"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Z5s-vF-Vwx" secondAttribute="height" multiplier="1:1" id="QW8-sZ-OaU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegation Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eon-J1-fMg">
+                                <rect key="frame" x="97.5" y="104" width="180" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="account address" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrB-0M-vo9">
+                                <rect key="frame" x="40" y="483" width="295" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipp-bd-lhC">
+                                <rect key="frame" x="40" y="533.5" width="295" height="44"/>
+                                <color key="backgroundColor" name="branding"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oL7-rd-EbZ"/>
+                                </constraints>
+                                <state key="normal" title="Copy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eon-J1-fMg" firstAttribute="top" secondItem="Kpq-bm-B6Z" secondAttribute="top" constant="40" id="2Nr-U8-RH4"/>
+                            <constraint firstItem="Ipp-bd-lhC" firstAttribute="leading" secondItem="Kpq-bm-B6Z" secondAttribute="leading" constant="40" id="4uw-Kt-yVi"/>
+                            <constraint firstItem="eon-J1-fMg" firstAttribute="centerX" secondItem="Kpq-bm-B6Z" secondAttribute="centerX" id="CSY-B4-vZQ"/>
+                            <constraint firstItem="Z5s-vF-Vwx" firstAttribute="top" secondItem="eon-J1-fMg" secondAttribute="bottom" constant="20" id="Iez-4k-F1M"/>
+                            <constraint firstItem="UrB-0M-vo9" firstAttribute="top" secondItem="Z5s-vF-Vwx" secondAttribute="bottom" constant="40" id="NdP-Ox-XBT"/>
+                            <constraint firstItem="UrB-0M-vo9" firstAttribute="leading" secondItem="Kpq-bm-B6Z" secondAttribute="leading" constant="40" id="VPX-aZ-ZrL"/>
+                            <constraint firstItem="Z5s-vF-Vwx" firstAttribute="centerX" secondItem="Kpq-bm-B6Z" secondAttribute="centerX" id="ZnM-nN-0AJ"/>
+                            <constraint firstItem="Kpq-bm-B6Z" firstAttribute="trailing" secondItem="Z5s-vF-Vwx" secondAttribute="trailing" constant="40" id="blJ-C7-Mni"/>
+                            <constraint firstItem="Kpq-bm-B6Z" firstAttribute="trailing" secondItem="Ipp-bd-lhC" secondAttribute="trailing" constant="40" id="cKA-Xp-dcV"/>
+                            <constraint firstItem="Kpq-bm-B6Z" firstAttribute="trailing" secondItem="UrB-0M-vo9" secondAttribute="trailing" constant="40" id="cMo-nF-KmT"/>
+                            <constraint firstItem="Z5s-vF-Vwx" firstAttribute="leading" secondItem="Kpq-bm-B6Z" secondAttribute="leading" constant="40" id="cyX-AK-buC"/>
+                            <constraint firstItem="Ipp-bd-lhC" firstAttribute="top" secondItem="UrB-0M-vo9" secondAttribute="bottom" constant="30" id="o6w-KM-oNk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kpq-bm-B6Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountAddress" destination="UrB-0M-vo9" id="19w-m6-wc6"/>
+                        <outlet property="copyButton" destination="Ipp-bd-lhC" id="xbv-1x-c6i"/>
+                        <outlet property="qrCodeImageView" destination="Z5s-vF-Vwx" id="iO4-tB-xxb"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="652" y="-966"/>
         </scene>
     </scenes>
     <resources>
