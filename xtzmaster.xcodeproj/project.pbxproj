@@ -30,6 +30,9 @@
 		9135B90321D8A6820077ED46 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135B90221D8A6820077ED46 /* DashboardViewModel.swift */; };
 		91373944227E5D7800F59676 /* DelegationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91373943227E5D7800F59676 /* DelegationViewController.swift */; };
 		91373946227E61C200F59676 /* QRCodeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91373945227E61C200F59676 /* QRCodeUtil.swift */; };
+		91373949227E65BF00F59676 /* SingleRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91373948227E65BF00F59676 /* SingleRow.xib */; };
+		9137394B227E65CA00F59676 /* SingleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9137394A227E65CA00F59676 /* SingleRow.swift */; };
+		9137394D227E65D800F59676 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9137394C227E65D800F59676 /* DesignableView.swift */; };
 		914DC95121E46EC000C5126B /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DC95021E46EC000C5126B /* SettingCell.swift */; };
 		914DC95521E4712000C5126B /* SettingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DC95421E4712000C5126B /* SettingCellViewModel.swift */; };
 		914DC95821E4739300C5126B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DC95721E4739300C5126B /* Constants.swift */; };
@@ -90,6 +93,9 @@
 		9135B90221D8A6820077ED46 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		91373943227E5D7800F59676 /* DelegationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationViewController.swift; sourceTree = "<group>"; };
 		91373945227E61C200F59676 /* QRCodeUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeUtil.swift; sourceTree = "<group>"; };
+		91373948227E65BF00F59676 /* SingleRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleRow.xib; sourceTree = "<group>"; };
+		9137394A227E65CA00F59676 /* SingleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRow.swift; sourceTree = "<group>"; };
+		9137394C227E65D800F59676 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		914DC95021E46EC000C5126B /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		914DC95421E4712000C5126B /* SettingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCellViewModel.swift; sourceTree = "<group>"; };
 		914DC95721E4739300C5126B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -190,6 +196,7 @@
 		8539AD05219A446D0027E6DB /* App */ = {
 			isa = PBXGroup;
 			children = (
+				91373947227E65A400F59676 /* CustomControls */,
 				914DC95621E4738A00C5126B /* Config */,
 				911CB4D721DDE6B600725444 /* Helper */,
 				8539AD0F219A68ED0027E6DB /* Dashboard */,
@@ -253,6 +260,16 @@
 				911FA56B21CF9F4600D6639E /* GetBakingInfoUseCase.swift */,
 			);
 			path = UseCase;
+			sourceTree = "<group>";
+		};
+		91373947227E65A400F59676 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				91373948227E65BF00F59676 /* SingleRow.xib */,
+				9137394A227E65CA00F59676 /* SingleRow.swift */,
+				9137394C227E65D800F59676 /* DesignableView.swift */,
+			);
+			path = CustomControls;
 			sourceTree = "<group>";
 		};
 		9143E52321C9153C00B79D27 /* Provider */ = {
@@ -400,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91373949227E65BF00F59676 /* SingleRow.xib in Resources */,
 				85070679219A23700055BCAF /* LaunchScreen.storyboard in Resources */,
 				8539AD11219A68FD0027E6DB /* Dashboard.storyboard in Resources */,
 				85070676219A23700055BCAF /* Assets.xcassets in Resources */,
@@ -593,10 +611,12 @@
 				911FA56C21CF9F4600D6639E /* GetBakingInfoUseCase.swift in Sources */,
 				914DC95821E4739300C5126B /* Constants.swift in Sources */,
 				911FA55B21CCF7A100D6639E /* AccountProvider.swift in Sources */,
+				9137394D227E65D800F59676 /* DesignableView.swift in Sources */,
 				914DC95A21E47D3400C5126B /* UIColor+Extension.swift in Sources */,
 				91373944227E5D7800F59676 /* DelegationViewController.swift in Sources */,
 				85070671219A236F0055BCAF /* EntranceViewController.swift in Sources */,
 				9135B90321D8A6820077ED46 /* DashboardViewModel.swift in Sources */,
+				9137394B227E65CA00F59676 /* SingleRow.swift in Sources */,
 				91536AA121F1CEBF008F10B3 /* Delegator.swift in Sources */,
 				911FA56A21CE532E00D6639E /* GetAccountInfoUseCase.swift in Sources */,
 				917AC24F21C910D800E9CA48 /* XTZMasterAPI.swift in Sources */,
