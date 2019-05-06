@@ -48,7 +48,7 @@
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sy-mm-Bxc" userLabel="separator">
                                                     <rect key="frame" x="0.0" y="43" width="375" height="1"/>
-                                                    <color key="backgroundColor" name="grey"/>
+                                                    <color key="backgroundColor" name="greyColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="L0Z-zF-djl"/>
                                                     </constraints>
@@ -111,7 +111,7 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="grey">
+        <namedColor name="greyColor">
             <color red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>

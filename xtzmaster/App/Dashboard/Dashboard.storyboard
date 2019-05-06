@@ -93,7 +93,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" name="grey"/>
+                                        <color key="backgroundColor" name="greyColor"/>
                                         <constraints>
                                             <constraint firstItem="RUK-Y4-s0m" firstAttribute="top" secondItem="wUc-F6-ow9" secondAttribute="top" constant="20" id="L2f-hh-0B4"/>
                                             <constraint firstAttribute="trailing" secondItem="hcX-5K-Wuk" secondAttribute="trailing" constant="20" id="Nth-ne-KCi"/>
@@ -145,7 +145,7 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="grey">
+        <namedColor name="greyColor">
             <color red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
