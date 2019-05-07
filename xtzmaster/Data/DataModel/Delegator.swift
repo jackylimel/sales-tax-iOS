@@ -1,3 +1,5 @@
+import Foundation
+
 struct Delegator: Codable {
   let id: Int
   let address: String
@@ -20,7 +22,11 @@ struct Delegator: Codable {
   }
 
   func daysWithXTZMaster() -> String {
-    return ""
+    let calendar = Calendar.current
+    let today = calendar.startOfDay(for: Date())
+    let joined = calendar.startOfDay(for: ISO8601DateFormatter().date(from: joinedDate) ?? Date())
+    let components = calendar.dateComponents([.day], from: joined, to: today)
+    return "\(components.day ?? 0) days"
   }
 
   var displayAddress: String {
