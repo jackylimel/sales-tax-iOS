@@ -10,7 +10,7 @@ class BakingDetailViewModel {
       .map { rewardSplit -> [BakingDetailCellViewModel] in
         let currentBalance = BakingDetailCellViewModel(title: "Current Balance", value: String(delegator.balance))
         let currentCycle = BakingDetailCellViewModel(title: "Current Cycle", value: String(rewardSplit.currentCycle))
-        let daysToNextReward = BakingDetailCellViewModel(title: "To next reward", value: delegator.daysToNextReward())
+        let daysToNextReward = BakingDetailCellViewModel(title: "To next reward", value: DataStore.shared.account?.getTimeToNextReward() ?? "0 days 0 hours")
         let daysWith = BakingDetailCellViewModel(title: "With XTZMaster", value: delegator.daysWithXTZMaster())
         let joinedCycle = BakingDetailCellViewModel(title: "Joined Cycle", value: String(delegator.joinedCycle))
         let feeRate = BakingDetailCellViewModel(title: "Fee rate", value: String(rewardSplit.feeRate))

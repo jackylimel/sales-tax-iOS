@@ -19,10 +19,6 @@ struct Delegator: Codable {
     case lastUpdate = "last_update"
   }
 
-  func daysToNextReward() -> String {
-    return ""
-  }
-
   func daysWithXTZMaster() -> String {
     return ""
   }
