@@ -7,6 +7,11 @@ struct Account: Codable {
   let staking: Double
   let cycle: Int
   let timeToNextReward: TimeToNextReward
+  let totalCap: Double
+  let usedCap: Double
+  let availableCap: Double
+  let usedCapPercent: Double
+  let availableCapPercent: Double
   
   enum CodingKeys: String, CodingKey {
     case name
@@ -15,6 +20,11 @@ struct Account: Codable {
     case cycle
     case staking = "staking_balance"
     case timeToNextReward = "time_to_next_reward"
+    case totalCap = "total_cap"
+    case usedCap = "used_cap"
+    case availableCap = "available_cap"
+    case usedCapPercent = "used_cap_percent"
+    case availableCapPercent = "available_cap_percent"
   }
   
   var address: String {

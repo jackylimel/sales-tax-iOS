@@ -32,23 +32,30 @@ class HomeViewController: UIViewController {
     delegationButton.layer.cornerRadius = 5
 
     totalCapRow.titleLabel.text = "Total Cap"
-    totalCapRow.valueLabel.text = "493.4 Rolls"
+    totalCapRow.valueLabel.text = ""
 
     userPercentRow.titleLabel.text = "Used"
-    userPercentRow.valueLabel.text = "64.51%"
+    userPercentRow.valueLabel.text = ""
 
     avaiableRollsRow.titleLabel.text = "Available"
-    avaiableRollsRow.valueLabel.text = "175.1 Rolls"
+    avaiableRollsRow.valueLabel.text = ""
 
     cycleRow.titleLabel.text = "Cycle"
-    cycleRow.valueLabel.text = "103"
+    cycleRow.valueLabel.text = ""
     
     usecase.getRootAccount(by: rootAccount)
-      .subscribe(onNext: { account in
-        print(account)
+      .subscribe(onNext: { [weak self] account in
+        self?.updateUI(with: account)
       }, onError: { error in
         print(error)
       })
       .disposed(by: disposeBag)
+  }
+
+  func updateUI(with account: Account) {
+    totalCapRow.valueLabel.text = "\(account.totalCap)"
+    userPercentRow.valueLabel.text = "\(account.usedCapPercent) %"
+    avaiableRollsRow.valueLabel.text = "\(account.availableCap) Rolls"
+    cycleRow.valueLabel.text = "\(account.cycle)"
   }
 }
