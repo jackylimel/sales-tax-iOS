@@ -7,4 +7,6 @@ struct Constants {
   
   static let mailUrl = URL(string: "mailto:baking@xtzmaster.com")!
   static let faqUrl = URL(string: "https://www.xtzmaster.com/faq.html")!
+
+  static let apiKey = "Qg2tCZTpCGRReCwYXddvcdKgnmx9npys"
 }

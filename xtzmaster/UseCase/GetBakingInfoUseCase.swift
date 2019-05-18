@@ -13,6 +13,6 @@ class GetBakingInfoUseCase {
       fatalError("Network Error")
     }
     
-    return accountProvider.getRewardSplit(bakerAddress: account.address, delegatorAddress: delegatorAddress, cycle: account.cycle - 6)
+    return accountProvider.getRewardSplit(delegatorAddress: delegatorAddress, cycle: account.cycle - 6)
   }
 }

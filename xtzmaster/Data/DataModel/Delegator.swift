@@ -8,14 +8,11 @@ struct Delegator: Codable {
   let joinedCycle: Int
   let lastUpdate: String
   let created: String
+  let manager: String
   let balance: Double
   
   enum CodingKeys: String, CodingKey {
-    case id
-    case address
-    case vip
-    case created
-    case balance
+    case id, address, vip, created, manager, balance
     case joinedDate = "joined_date"
     case joinedCycle = "joined_cycle"
     case lastUpdate = "last_update"

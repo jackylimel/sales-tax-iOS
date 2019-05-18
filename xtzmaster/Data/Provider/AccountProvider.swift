@@ -21,8 +21,8 @@ struct AccountProvider {
     return executeRequest(request: request, mapping: mapping)
   }
   
-  func getRewardSplit(bakerAddress: String, delegatorAddress: String, cycle: Int) -> Observable<RewardSplit> {
-    let request = provider.rx.request(.getRewardSplit(bakerAddress: bakerAddress, delegatorAddress: delegatorAddress, cycle: cycle))
+  func getRewardSplit(delegatorAddress: String, cycle: Int) -> Observable<RewardSplit> {
+    let request = provider.rx.request(.getRewardSplit(delegatorAddress: delegatorAddress, cycle: cycle))
     let mapping = { response -> Observable<RewardSplit> in
       self.mapResponseTo(response: response)
     }
