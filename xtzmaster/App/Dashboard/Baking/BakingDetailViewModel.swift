@@ -18,7 +18,11 @@ class BakingDetailViewModel {
         let balanceByUnlockedCycle = BakingDetailCellViewModel(title: "Balance By Cycle \(rewardSplit.cycle)", value: String(rewardSplit.balance))
         let delegationAccount = BakingDetailCellViewModel(title: "Delegation Account", value: delegator.address)
         let managerAccount = BakingDetailCellViewModel(title: "Manager Account", value: delegator.manager)
-        return [currentBalance, currentCycle, daysToNextReward, daysWith, joinedCycle, feeRate, unlockedCycle, balanceByUnlockedCycle, delegationAccount, managerAccount]
+        var result = [currentBalance, currentCycle, daysToNextReward, daysWith, joinedCycle, feeRate, unlockedCycle, balanceByUnlockedCycle, delegationAccount, managerAccount]
+        if (rewardSplit.paid) {
+          result.append(BakingDetailCellViewModel(title: "Reward paid", value: "https://tzscan.io/\(rewardSplit.paidReference)"))
+        }
+        return result
       }
   }
 }
