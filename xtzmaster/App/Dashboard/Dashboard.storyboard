@@ -62,6 +62,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7kR-Xw-emV" userLabel="emptyView">
+                                <rect key="frame" x="0.0" y="44" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data not found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7n-MG-Spx" userLabel="messageLabel">
+                                        <rect key="frame" x="130.5" y="291.5" width="114" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="I7n-MG-Spx" firstAttribute="centerY" secondItem="7kR-Xw-emV" secondAttribute="centerY" id="2TT-ox-j6k"/>
+                                    <constraint firstItem="I7n-MG-Spx" firstAttribute="centerX" secondItem="7kR-Xw-emV" secondAttribute="centerX" id="5IV-H7-uVu"/>
+                                </constraints>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uWO-pq-s95">
                                 <rect key="frame" x="0.0" y="84" width="375" height="563"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -112,15 +128,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="BmM-Mm-QGY" firstAttribute="trailing" secondItem="7kR-Xw-emV" secondAttribute="trailing" id="185-N4-qcu"/>
+                            <constraint firstItem="BmM-Mm-QGY" firstAttribute="bottom" secondItem="7kR-Xw-emV" secondAttribute="bottom" constant="20" id="4mr-ah-4Qv"/>
+                            <constraint firstItem="7kR-Xw-emV" firstAttribute="leading" secondItem="BmM-Mm-QGY" secondAttribute="leading" id="Q0R-An-CdW"/>
                             <constraint firstItem="uWO-pq-s95" firstAttribute="leading" secondItem="BmM-Mm-QGY" secondAttribute="leading" id="VDV-LV-Th4"/>
                             <constraint firstItem="BmM-Mm-QGY" firstAttribute="trailing" secondItem="uWO-pq-s95" secondAttribute="trailing" id="Vb4-ED-roK"/>
                             <constraint firstItem="uWO-pq-s95" firstAttribute="top" secondItem="BmM-Mm-QGY" secondAttribute="top" constant="20" id="gPV-qs-Znm"/>
+                            <constraint firstItem="BmM-Mm-QGY" firstAttribute="top" secondItem="7kR-Xw-emV" secondAttribute="top" constant="20" id="nya-FM-cnn"/>
                             <constraint firstItem="BmM-Mm-QGY" firstAttribute="bottom" secondItem="uWO-pq-s95" secondAttribute="bottom" constant="20" id="rJg-XE-Z8T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BmM-Mm-QGY"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="uWO-pq-s95" id="Drr-9M-l07"/>
+                        <outlet property="emptyView" destination="7kR-Xw-emV" id="9gy-tX-Nlq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uP9-ax-VDL" userLabel="First Responder" sceneMemberID="firstResponder"/>

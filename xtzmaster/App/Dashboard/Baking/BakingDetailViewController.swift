@@ -4,7 +4,8 @@ import RxSwift
 class BakingDetailViewController: UIViewController {
   
   @IBOutlet var collectionView: UICollectionView!
-  
+  @IBOutlet weak var emptyView: UIView!
+
   var cellViewModels: [BakingDetailCellViewModel] = []
   var delegator: Delegator?
   let viewModel = BakingDetailViewModel()
@@ -23,11 +24,17 @@ class BakingDetailViewController: UIViewController {
       self.showLoading()
       viewModel.createCellViewModels(with: delegator)
         .observeOn(MainScheduler.instance)
-        .subscribe(onNext: { [unowned self] in
-          self.cellViewModels = $0
-          self.hideLoading()
-          self.collectionView.reloadData()
-        })
+        .subscribe(
+          onNext: { [unowned self] in
+            self.cellViewModels = $0
+            self.hideLoading()
+            self.collectionView.reloadData()
+          }, onError: { [unowned self] error in
+            self.hideLoading()
+            self.collectionView.isHidden = true
+            self.emptyView.isHidden = false
+          }
+        )
         .disposed(by: disposeBag)
     }
   }
