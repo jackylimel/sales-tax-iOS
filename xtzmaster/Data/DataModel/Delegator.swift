@@ -27,6 +27,6 @@ struct Delegator: Codable {
   }
 
   var displayAddress: String {
-    return address.prefix(10) + "***************" + address.dropFirst(25)
+    return address
   }
 }

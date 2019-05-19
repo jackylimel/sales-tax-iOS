@@ -20,16 +20,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v6T-Aw-8HP">
-                                <rect key="frame" x="20" y="84" width="335" height="563"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="563"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DashboardDelegatorCell" id="kDC-EB-a84" userLabel="DashboardDelegatorCell" customClass="DashboardDelegatorCell" customModule="xtzmaster" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kDC-EB-a84" id="fWc-lf-7Y3">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6l-66-Irh" userLabel="addressLabel">
+                                                    <rect key="frame" x="20" y="10" width="335" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SB2-nj-2jp" userLabel="separator">
+                                                    <rect key="frame" x="20" y="51" width="335" height="1"/>
+                                                    <color key="backgroundColor" name="greyColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="LWb-Y5-RCz"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="K6l-66-Irh" firstAttribute="top" secondItem="fWc-lf-7Y3" secondAttribute="top" constant="10" id="5st-m7-pyR"/>
+                                                <constraint firstItem="SB2-nj-2jp" firstAttribute="leading" secondItem="K6l-66-Irh" secondAttribute="leading" id="H2a-M8-Bxx"/>
+                                                <constraint firstItem="SB2-nj-2jp" firstAttribute="trailing" secondItem="K6l-66-Irh" secondAttribute="trailing" id="MbS-DP-84L"/>
+                                                <constraint firstAttribute="trailing" secondItem="K6l-66-Irh" secondAttribute="trailing" constant="20" id="ZFQ-bi-Ky4"/>
+                                                <constraint firstItem="K6l-66-Irh" firstAttribute="leading" secondItem="fWc-lf-7Y3" secondAttribute="leading" constant="20" id="gxH-Ci-geN"/>
+                                                <constraint firstItem="SB2-nj-2jp" firstAttribute="top" secondItem="K6l-66-Irh" secondAttribute="bottom" constant="20" id="zre-oK-VbR"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="K6l-66-Irh" id="31q-fD-LLW"/>
+                                            <outlet property="separator" destination="SB2-nj-2jp" id="B85-xJ-TdC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -37,9 +66,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TXx-ba-mQS" firstAttribute="trailing" secondItem="v6T-Aw-8HP" secondAttribute="trailing" constant="20" id="d4k-4v-Ljb"/>
+                            <constraint firstItem="TXx-ba-mQS" firstAttribute="trailing" secondItem="v6T-Aw-8HP" secondAttribute="trailing" id="d4k-4v-Ljb"/>
                             <constraint firstItem="v6T-Aw-8HP" firstAttribute="top" secondItem="TXx-ba-mQS" secondAttribute="top" constant="20" id="dDr-z6-g6g"/>
-                            <constraint firstItem="v6T-Aw-8HP" firstAttribute="leading" secondItem="TXx-ba-mQS" secondAttribute="leading" constant="20" id="mU4-60-a2R"/>
+                            <constraint firstItem="v6T-Aw-8HP" firstAttribute="leading" secondItem="TXx-ba-mQS" secondAttribute="leading" id="mU4-60-a2R"/>
                             <constraint firstItem="v6T-Aw-8HP" firstAttribute="bottom" secondItem="TXx-ba-mQS" secondAttribute="bottom" constant="-20" id="yeE-6i-0mo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TXx-ba-mQS"/>

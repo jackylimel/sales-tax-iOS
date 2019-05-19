@@ -89,39 +89,25 @@ class DashboardViewController: UIViewController {
 }
 
 extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
-  
-  func numberOfSections(in tableView: UITableView) -> Int {
+
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     if isFiltering() {
       return filteredDelegators.count
     }
     return delegators.count
   }
-  
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 1
-  }
-  
-  func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    return 10
-  }
-  
-  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    let headerView = UIView()
-    headerView.backgroundColor = UIColor.clear
-    return headerView
-  }
-  
+
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 60
   }
-  
+
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.dashboardDelegatorCell, for: indexPath)!
     let delegator: Delegator
     if isFiltering() {
-        delegator = filteredDelegators[indexPath.section]
+        delegator = filteredDelegators[indexPath.row]
     } else {
-        delegator = delegators[indexPath.section]
+        delegator = delegators[indexPath.row]
     }
     cell.setAddress(address: delegator.displayAddress)
     return cell
@@ -133,7 +119,7 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension DashboardViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        filterContentForSearchText(searchController.searchBar.text!)
-    }
+  func updateSearchResults(for searchController: UISearchController) {
+    filterContentForSearchText(searchController.searchBar.text!)
+  }
 }
