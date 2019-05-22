@@ -41,6 +41,8 @@
 		91536AA321F1D06A008F10B3 /* DashboardDelegatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91536AA221F1D06A008F10B3 /* DashboardDelegatorCell.swift */; };
 		917AC24F21C910D800E9CA48 /* XTZMasterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917AC24E21C910D800E9CA48 /* XTZMasterAPI.swift */; };
 		9187047F229508D50086A5FD /* BakingDetailSingleRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9187047E229508D50086A5FD /* BakingDetailSingleRowCell.xib */; };
+		91870481229511010086A5FD /* BakingDetailTwoRowsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91870480229511010086A5FD /* BakingDetailTwoRowsCell.xib */; };
+		918704842295111E0086A5FD /* BakingDetailTwoRowsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918704832295111E0086A5FD /* BakingDetailTwoRowsCellView.swift */; };
 		919FFAF721E84FCD00FC679A /* BakingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FFAF621E84FCD00FC679A /* BakingDetailViewController.swift */; };
 		919FFAFB21E9A5F500FC679A /* BakingDetailSingleRowCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FFAFA21E9A5F500FC679A /* BakingDetailSingleRowCellView.swift */; };
 		919FFAFD21E9A74900FC679A /* BakingDetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FFAFC21E9A74900FC679A /* BakingDetailCellViewModel.swift */; };
@@ -105,6 +107,8 @@
 		91536AA221F1D06A008F10B3 /* DashboardDelegatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDelegatorCell.swift; sourceTree = "<group>"; };
 		917AC24E21C910D800E9CA48 /* XTZMasterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTZMasterAPI.swift; sourceTree = "<group>"; };
 		9187047E229508D50086A5FD /* BakingDetailSingleRowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BakingDetailSingleRowCell.xib; sourceTree = "<group>"; };
+		91870480229511010086A5FD /* BakingDetailTwoRowsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BakingDetailTwoRowsCell.xib; sourceTree = "<group>"; };
+		918704832295111E0086A5FD /* BakingDetailTwoRowsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailTwoRowsCellView.swift; sourceTree = "<group>"; };
 		919FFAF621E84FCD00FC679A /* BakingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailViewController.swift; sourceTree = "<group>"; };
 		919FFAFA21E9A5F500FC679A /* BakingDetailSingleRowCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailSingleRowCellView.swift; sourceTree = "<group>"; };
 		919FFAFC21E9A74900FC679A /* BakingDetailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailCellViewModel.swift; sourceTree = "<group>"; };
@@ -311,13 +315,23 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
+		918704822295110A0086A5FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				919FFAFA21E9A5F500FC679A /* BakingDetailSingleRowCellView.swift */,
+				9187047E229508D50086A5FD /* BakingDetailSingleRowCell.xib */,
+				918704832295111E0086A5FD /* BakingDetailTwoRowsCellView.swift */,
+				91870480229511010086A5FD /* BakingDetailTwoRowsCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		919FFAF321E84E9C00FC679A /* Baking */ = {
 			isa = PBXGroup;
 			children = (
+				918704822295110A0086A5FD /* View */,
 				919FFAF621E84FCD00FC679A /* BakingDetailViewController.swift */,
 				919FFAFE21E9A8B400FC679A /* BakingDetailViewModel.swift */,
-				919FFAFA21E9A5F500FC679A /* BakingDetailSingleRowCellView.swift */,
-				9187047E229508D50086A5FD /* BakingDetailSingleRowCell.xib */,
 				919FFAFC21E9A74900FC679A /* BakingDetailCellViewModel.swift */,
 			);
 			path = Baking;
@@ -428,6 +442,7 @@
 				8539AD09219A54710027E6DB /* Home.storyboard in Resources */,
 				9187047F229508D50086A5FD /* BakingDetailSingleRowCell.xib in Resources */,
 				8539AD0E219A57490027E6DB /* Settings.storyboard in Resources */,
+				91870481229511010086A5FD /* BakingDetailTwoRowsCell.xib in Resources */,
 				911CB4D221DDDF8700725444 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +629,7 @@
 				91373946227E61C200F59676 /* QRCodeUtil.swift in Sources */,
 				911FA56C21CF9F4600D6639E /* GetBakingInfoUseCase.swift in Sources */,
 				914DC95821E4739300C5126B /* Constants.swift in Sources */,
+				918704842295111E0086A5FD /* BakingDetailTwoRowsCellView.swift in Sources */,
 				911FA55B21CCF7A100D6639E /* AccountProvider.swift in Sources */,
 				9137394D227E65D800F59676 /* DesignableView.swift in Sources */,
 				914DC95A21E47D3400C5126B /* UIColor+Extension.swift in Sources */,

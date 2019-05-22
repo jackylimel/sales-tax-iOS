@@ -23,13 +23,6 @@
                     <color key="textColor" name="titleColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="help" translatesAutoresizingMaskIntoConstraints="NO" id="Yyc-XN-rGO">
-                    <rect key="frame" x="38" y="19.5" width="15" height="15"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="15" id="EB7-UH-ajR"/>
-                        <constraint firstAttribute="width" secondItem="Yyc-XN-rGO" secondAttribute="height" multiplier="15:15" id="bDV-Cl-7I2"/>
-                    </constraints>
-                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARl-mb-IEn" userLabel="value">
                     <rect key="frame" x="423" y="18" width="36" height="18"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
@@ -49,8 +42,6 @@
                 <constraint firstItem="ARl-mb-IEn" firstAttribute="centerY" secondItem="UHM-oO-wCL" secondAttribute="centerY" id="0ua-uD-09V"/>
                 <constraint firstItem="JDX-aJ-RvL" firstAttribute="leading" secondItem="UHM-oO-wCL" secondAttribute="leading" constant="2" id="157-SS-oNr"/>
                 <constraint firstItem="UHM-oO-wCL" firstAttribute="trailing" secondItem="VLJ-qk-03d" secondAttribute="trailing" id="Eb0-OL-zdu"/>
-                <constraint firstItem="Yyc-XN-rGO" firstAttribute="centerY" secondItem="JDX-aJ-RvL" secondAttribute="centerY" id="Epl-MZ-vSj"/>
-                <constraint firstItem="Yyc-XN-rGO" firstAttribute="leading" secondItem="JDX-aJ-RvL" secondAttribute="trailing" constant="5" id="HVw-EI-Kbg"/>
                 <constraint firstItem="VLJ-qk-03d" firstAttribute="bottom" secondItem="UHM-oO-wCL" secondAttribute="bottom" id="eIH-dS-MeC"/>
                 <constraint firstItem="UHM-oO-wCL" firstAttribute="trailing" secondItem="ARl-mb-IEn" secondAttribute="trailing" constant="2" id="slE-ng-vCi"/>
                 <constraint firstItem="VLJ-qk-03d" firstAttribute="leading" secondItem="UHM-oO-wCL" secondAttribute="leading" id="tWD-vl-t11"/>
@@ -60,7 +51,6 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="UHM-oO-wCL"/>
             <connections>
-                <outlet property="helpImage" destination="Yyc-XN-rGO" id="RSe-xU-W1X"/>
                 <outlet property="titleLabel" destination="JDX-aJ-RvL" id="psw-GS-nx1"/>
                 <outlet property="valueLabel" destination="ARl-mb-IEn" id="xVx-HL-BBe"/>
             </connections>
@@ -68,7 +58,6 @@
         </view>
     </objects>
     <resources>
-        <image name="help" width="37.5" height="37.5"/>
         <namedColor name="greyColor">
             <color red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
