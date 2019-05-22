@@ -19,7 +19,9 @@ class BakingDetailViewController: UIViewController {
   override func viewDidLoad() {
     collectionView.delegate = self
     collectionView.dataSource = self
-    
+
+    collectionView.register(UINib(resource: R.nib.bakingDetailSingleRowCell), forCellWithReuseIdentifier: "bakingDetailSingleRowCell")
+
     if let delegator = self.delegator {
       self.showLoading()
       viewModel.createCellViewModels(with: delegator)
@@ -50,11 +52,11 @@ extension BakingDetailViewController: UICollectionViewDataSource, UICollectionVi
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    return CGSize(width: self.view.frame.width - 40, height: 100)
+    return CGSize(width: self.view.frame.width - 40, height: 40)
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.bakingDetailCellView, for: indexPath)! as BakingDetailCellView
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bakingDetailSingleRowCell", for: indexPath) as! BakingDetailSingleRowCellView
     cell.update(with: cellViewModels[indexPath.row])
     return cell
   }
