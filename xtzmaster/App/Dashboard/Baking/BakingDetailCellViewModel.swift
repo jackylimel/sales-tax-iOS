@@ -1,3 +1,5 @@
+import Foundation
+
 enum BakingDetailCellType {
   case singleRow
   case twoRows
@@ -6,4 +8,5 @@ enum BakingDetailCellType {
 struct BakingDetailCellViewModel {
   let title: String
   let value: String
+  let url: URL?
 }

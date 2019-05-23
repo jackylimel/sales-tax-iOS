@@ -1,5 +1,10 @@
 import UIKit
 import RxSwift
+import SafariServices
+
+protocol BakingDetailViewCellDelegate {
+  func cellTapped(with url: URL)
+}
 
 class BakingDetailViewController: UIViewController {
   
@@ -77,5 +82,25 @@ extension BakingDetailViewController: UICollectionViewDataSource, UICollectionVi
       cell.update(with: twoRowsCellViewModels[indexPath.row])
       return cell
     }
+  }
+
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let viewModel: BakingDetailCellViewModel?
+    if indexPath.section == 0 {
+      let cell = collectionView.cellForItem(at: indexPath) as! BakingDetailSingleRowCellView
+      viewModel = cell.viewModel
+    } else {
+      let cell = collectionView.cellForItem(at: indexPath) as! BakingDetailTwoRowsCellView
+      viewModel = cell.viewModel
+    }
+    if let url = viewModel?.url {
+      cellTapped(with: url)
+    }
+  }
+
+  private func cellTapped(with url: URL) {
+    let config = SFSafariViewController.Configuration()
+    let vc = SFSafariViewController(url: url, configuration: config)
+    present(vc, animated: true)
   }
 }

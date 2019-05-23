@@ -26,7 +26,7 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5N-fA-IRf" userLabel="value">
                     <rect key="frame" x="2" y="58" width="36" height="18"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                    <color key="textColor" name="titleColor"/>
+                    <color key="textColor" name="brandingColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9y8-DX-9fU" userLabel="underline">
@@ -57,6 +57,9 @@
         </view>
     </objects>
     <resources>
+        <namedColor name="brandingColor">
+            <color red="0.17254901960784313" green="0.30196078431372547" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="greyColor">
             <color red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
