@@ -8,8 +8,8 @@ class SettingsViewController: UIViewController {
   
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    self.tabBarItem = UITabBarItem(title: "Settings", image: R.image.settings(), selectedImage: R.image.settingsSelected())
-    self.navigationItem.title = "Settings"
+    self.tabBarItem = UITabBarItem(title: R.string.localizable.settings(), image: R.image.settings(), selectedImage: R.image.settingsSelected())
+    self.navigationItem.title = R.string.localizable.settings()
   }
   
   override func viewDidLoad() {
@@ -33,12 +33,12 @@ class SettingsViewController: UIViewController {
                       url: Constants.slackUrl)
      ], [
       SettingCellModel(imageName: "icon-email",
-                       title: NSLocalizedString("Email", comment: ""),
+                       title: R.string.localizable.email(),
                        url: Constants.mailUrl,
                        action: SettingCellAction.mail)
      ], [
       SettingCellModel(imageName: "icon-info",
-                       title: NSLocalizedString("FAQ", comment: ""),
+                       title: R.string.localizable.faQ(),
                        url: Constants.faqUrl)
      ]]
   }

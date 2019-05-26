@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+*/
+"Baking" = "Baking";
+"Dashboard" = "Dashboard";
+"Settings" = "Settings";
+"Total Cap" = "Total Cap";
+"Used Cap" = "Used";
+"Available Cap" = "Available";
+"Cycle" = "Cycle";
+
+// Dashboard
+"Search Address" = "Search Address";
+"Baking Details" = "Baking Details";
+"Current Balance" = "Current Balance";
+"Current Cycle" = "Current Cycle";
+"To Next Reward" = "To Next Reward";
+"With XTZMaster" = "With XTZMaster";
+"Joined Cycle" = "Joined Cycle";
+"Fee Rate" = "Fee Rate";
+"Unlocked Cycle" = "Unlocked Cycle";
+"Balance By Cycle" = "Balance By Cycle %@";
+"Reward paid" = "Reward paid";
+"Verify" = "Verify";
+"Delegation Account" = "Delegation Account";
+"Manager Account" = "Manager Account";
+
+// Settings
+"Email" = "Email";
+"FAQ" = "FAQ";

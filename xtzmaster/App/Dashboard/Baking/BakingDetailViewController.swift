@@ -19,7 +19,7 @@ class BakingDetailViewController: UIViewController {
   
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    self.navigationItem.title = "Baking Details"
+    self.navigationItem.title = R.string.localizable.bakingDetails()
   }
   
   override func viewDidLoad() {

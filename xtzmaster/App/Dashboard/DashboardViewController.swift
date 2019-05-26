@@ -15,8 +15,8 @@ class DashboardViewController: UIViewController {
   
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    self.tabBarItem = UITabBarItem(title: "Dashboard", image: R.image.dashboard(), selectedImage: R.image.dashboardSelected())
-    self.navigationItem.title = "Dashboard"
+    self.tabBarItem = UITabBarItem(title: R.string.localizable.dashboard(), image: R.image.dashboard(), selectedImage: R.image.dashboardSelected())
+    self.navigationItem.title = R.string.localizable.dashboard()
   }
 
   // This is to fix the problem that search bar is not visible on launch
@@ -37,7 +37,7 @@ class DashboardViewController: UIViewController {
 
     searchController.searchResultsUpdater = self
     searchController.obscuresBackgroundDuringPresentation = false
-    searchController.searchBar.placeholder = "Search Address"
+    searchController.searchBar.placeholder = R.string.localizable.searchAddress()
     navigationItem.searchController = searchController
     definesPresentationContext = true
 

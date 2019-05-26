@@ -47,6 +47,7 @@
 		919FFAFB21E9A5F500FC679A /* BakingDetailSingleRowCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FFAFA21E9A5F500FC679A /* BakingDetailSingleRowCellView.swift */; };
 		919FFAFD21E9A74900FC679A /* BakingDetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FFAFC21E9A74900FC679A /* BakingDetailCellViewModel.swift */; };
 		919FFAFF21E9A8B400FC679A /* BakingDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FFAFE21E9A8B400FC679A /* BakingDetailViewModel.swift */; };
+		91BBA2BE229B4E7D00B65136 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91BBA2BD229B4E7D00B65136 /* Localizable.strings */; };
 		91F3346D21F2AD35001CAC54 /* RewardSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F3346C21F2AD35001CAC54 /* RewardSplit.swift */; };
 		91F3346F21F2B26A001CAC54 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F3346E21F2B26A001CAC54 /* DataStore.swift */; };
 		D210B3799890969B22A7ADD4 /* Pods_xtzmaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDA27FB62DFBDC0D29B1896 /* Pods_xtzmaster.framework */; };
@@ -113,6 +114,7 @@
 		919FFAFA21E9A5F500FC679A /* BakingDetailSingleRowCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailSingleRowCellView.swift; sourceTree = "<group>"; };
 		919FFAFC21E9A74900FC679A /* BakingDetailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailCellViewModel.swift; sourceTree = "<group>"; };
 		919FFAFE21E9A8B400FC679A /* BakingDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailViewModel.swift; sourceTree = "<group>"; };
+		91BBA2BD229B4E7D00B65136 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		91F3346C21F2AD35001CAC54 /* RewardSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardSplit.swift; sourceTree = "<group>"; };
 		91F3346E21F2B26A001CAC54 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		96A2575403FC99E42CDD695B /* Pods-xtzmaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xtzmaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xtzmaster/Pods-xtzmaster.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				8539AD0A219A57190027E6DB /* Home */,
 				85070672219A236F0055BCAF /* Entrance.storyboard */,
 				85070670219A236F0055BCAF /* EntranceViewController.swift */,
+				91BBA2BD229B4E7D00B65136 /* Localizable.strings */,
 				911CB4D121DDDF8700725444 /* Colors.xcassets */,
 				85070675219A23700055BCAF /* Assets.xcassets */,
 			);
@@ -436,6 +439,7 @@
 			files = (
 				91373949227E65BF00F59676 /* SingleRow.xib in Resources */,
 				85070679219A23700055BCAF /* LaunchScreen.storyboard in Resources */,
+				91BBA2BE229B4E7D00B65136 /* Localizable.strings in Resources */,
 				8539AD11219A68FD0027E6DB /* Dashboard.storyboard in Resources */,
 				85070676219A23700055BCAF /* Assets.xcassets in Resources */,
 				85070674219A236F0055BCAF /* Entrance.storyboard in Resources */,

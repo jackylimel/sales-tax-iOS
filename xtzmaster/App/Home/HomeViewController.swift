@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
 
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    self.tabBarItem = UITabBarItem(title: "Home", image: R.image.home(), selectedImage: R.image.homeSelected())
+    self.tabBarItem = UITabBarItem(title: R.string.localizable.baking(), image: R.image.home(), selectedImage: R.image.homeSelected())
     self.navigationItem.title = "XTZMaster"
   }
 
@@ -31,16 +31,16 @@ class HomeViewController: UIViewController {
 
     delegationButton.layer.cornerRadius = 5
 
-    totalCapRow.titleLabel.text = "Total Cap"
+    totalCapRow.titleLabel.text = R.string.localizable.totalCap()
     totalCapRow.valueLabel.text = ""
 
-    userPercentRow.titleLabel.text = "Used"
+    userPercentRow.titleLabel.text = R.string.localizable.usedCap()
     userPercentRow.valueLabel.text = ""
 
-    avaiableRollsRow.titleLabel.text = "Available"
+    avaiableRollsRow.titleLabel.text = R.string.localizable.availableCap()
     avaiableRollsRow.valueLabel.text = ""
 
-    cycleRow.titleLabel.text = "Cycle"
+    cycleRow.titleLabel.text = R.string.localizable.cycle()
     cycleRow.valueLabel.text = ""
     
     usecase.getRootAccount(by: rootAccount)
