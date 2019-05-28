@@ -30,7 +30,6 @@
         <!--Home View Controller-->
         <scene sceneID="OCk-XV-8DJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BHS-jC-P4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VBT-8x-vY1" customClass="HomeViewController" customModule="xtzmaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yyx-Jz-4oA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
@@ -79,6 +78,9 @@
                                         <state key="normal" title="Start Delegation">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Start Delegation"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="Rng-Ec-Kx7" kind="show" identifier="ShowDelegationViewController" id="VKQ-NL-6o6"/>
                                         </connections>
@@ -128,13 +130,13 @@
                         <outlet property="userPercentRow" destination="EfO-VK-fdX" id="z27-NN-Nnq"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHS-jC-P4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-258.39999999999998" y="-965.6671664167917"/>
         </scene>
         <!--Delegation View Controller-->
         <scene sceneID="x0h-F5-hko">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oBf-4b-GWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Rng-Ec-Kx7" customClass="DelegationViewController" customModule="xtzmaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f9U-ie-GDr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -151,6 +153,9 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Delegation Address"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="account address" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrB-0M-vo9">
                                 <rect key="frame" x="40" y="483" width="295" height="20.5"/>
@@ -167,6 +172,9 @@
                                 <state key="normal" title="Copy">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Copy"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -192,6 +200,7 @@
                         <outlet property="qrCodeImageView" destination="Z5s-vF-Vwx" id="iO4-tB-xxb"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBf-4b-GWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="652" y="-966"/>
         </scene>

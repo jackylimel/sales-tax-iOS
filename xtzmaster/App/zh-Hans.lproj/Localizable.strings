@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+*/
+"Baking" = "烘焙";
+"Dashboard" = "明细";
+"Settings" = "设置";
+"Total Cap" = "总容量";
+"Used Cap" = "已用";
+"Available Cap" = "可用";
+"Cycle" = "周期";
+"Start Delegation" = "开始委托";
+"Delegation Address" = "委托地址";
+"Copy" = "复制";
+
+// Dashboard
+"Search Address" = "查找地址";
+"Baking Details" = "烘焙详情";
+"Current Balance" = "当前余额";
+"Current Cycle" = "当前周期";
+"To Next Reward" = "下次收益到达时间";
+"With XTZMaster" = "烘焙天数";
+"Joined Cycle" = "委托周期";
+"Fee Rate" = "手续费率";
+"Unlocked Cycle" = "解冻周期";
+"Balance By Cycle" = "解冻周期账户余额 %@";
+"Reward paid" = "收益已分发";
+"Verify" = "验证";
+"Delegation Account" = "委托账户";
+"Manager Account" = "Manager账户";
+
+// Settings
+"Email" = "邮件";
+"FAQ" = "常见问题";

@@ -8,6 +8,9 @@
 "Used Cap" = "Used";
 "Available Cap" = "Available";
 "Cycle" = "Cycle";
+"Start Delegation" = "Start Delegation";
+"Delegation Address" = "Delegation Address";
+"Copy" = "Copy";
 
 // Dashboard
 "Search Address" = "Search Address";
