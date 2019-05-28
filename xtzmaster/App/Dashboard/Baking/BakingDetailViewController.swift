@@ -25,7 +25,9 @@ class BakingDetailViewController: UIViewController {
 
   @objc
   func help() {
-
+    if let vc = R.storyboard.bakingDetailHelp().instantiateInitialViewController() {
+      navigationController?.pushViewController(vc, animated: true)
+    }
   }
   
   override func viewDidLoad() {
