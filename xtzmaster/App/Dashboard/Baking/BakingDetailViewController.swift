@@ -20,6 +20,12 @@ class BakingDetailViewController: UIViewController {
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     self.navigationItem.title = R.string.localizable.bakingDetails()
+    self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: R.image.help(), style: .plain, target: self, action: #selector(help))
+  }
+
+  @objc
+  func help() {
+
   }
   
   override func viewDidLoad() {
