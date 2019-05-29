@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwoRows" customModule="xtzmaster" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OqP-B5-Q9Y">
+            <rect key="frame" x="0.0" y="0.0" width="461" height="92"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IW1-Ov-5pW" userLabel="title">
+                    <rect key="frame" x="0.0" y="0.0" width="31" height="18"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" name="titleColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yH3-lo-Tcj" userLabel="underline">
+                    <rect key="frame" x="0.0" y="91" width="461" height="1"/>
+                    <color key="backgroundColor" name="greyColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vX0-ea-dSK"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="value" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYa-zl-OmN" userLabel="value">
+                    <rect key="frame" x="0.0" y="38" width="461" height="34"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                    <color key="textColor" name="titleColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yH3-lo-Tcj" firstAttribute="leading" secondItem="rR9-fv-VLR" secondAttribute="leading" id="3MR-1n-rXf"/>
+                <constraint firstItem="rR9-fv-VLR" firstAttribute="bottom" secondItem="zYa-zl-OmN" secondAttribute="bottom" constant="20" id="CGb-HY-Ode"/>
+                <constraint firstItem="zYa-zl-OmN" firstAttribute="top" secondItem="IW1-Ov-5pW" secondAttribute="bottom" constant="20" id="K4j-pn-bGS"/>
+                <constraint firstItem="zYa-zl-OmN" firstAttribute="trailing" secondItem="rR9-fv-VLR" secondAttribute="trailing" id="Pf3-Xt-FDU"/>
+                <constraint firstItem="IW1-Ov-5pW" firstAttribute="top" secondItem="rR9-fv-VLR" secondAttribute="top" id="Rsg-dz-1LO"/>
+                <constraint firstItem="rR9-fv-VLR" firstAttribute="trailing" secondItem="yH3-lo-Tcj" secondAttribute="trailing" id="TSI-hB-HIS"/>
+                <constraint firstItem="zYa-zl-OmN" firstAttribute="leading" secondItem="rR9-fv-VLR" secondAttribute="leading" id="jMT-Rf-EmR"/>
+                <constraint firstItem="rR9-fv-VLR" firstAttribute="bottom" secondItem="yH3-lo-Tcj" secondAttribute="bottom" id="jNv-NR-OVZ"/>
+                <constraint firstItem="IW1-Ov-5pW" firstAttribute="leading" secondItem="rR9-fv-VLR" secondAttribute="leading" id="uAy-LC-t2Q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="rR9-fv-VLR"/>
+            <point key="canvasLocation" x="42.399999999999999" y="23.388305847076463"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="greyColor">
+            <color red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="titleColor">
+            <color red="0.29019607843137257" green="0.29019607843137257" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

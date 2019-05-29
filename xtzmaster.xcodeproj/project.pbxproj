@@ -31,6 +31,8 @@
 		912EE9A5229D5DA70094AF3A /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912EE9A4229D5DA70094AF3A /* Localizable.swift */; };
 		912EE9AC229DF1590094AF3A /* BakingDetailHelp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912EE9AB229DF1590094AF3A /* BakingDetailHelp.storyboard */; };
 		912EE9AE229DF16E0094AF3A /* BakingDetailHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912EE9AD229DF16E0094AF3A /* BakingDetailHelpViewController.swift */; };
+		912EE9B0229DF4C00094AF3A /* TwoRows.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912EE9AF229DF4C00094AF3A /* TwoRows.xib */; };
+		912EE9B2229DF4CC0094AF3A /* TwoRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912EE9B1229DF4CC0094AF3A /* TwoRows.swift */; };
 		9135B90321D8A6820077ED46 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135B90221D8A6820077ED46 /* DashboardViewModel.swift */; };
 		91373944227E5D7800F59676 /* DelegationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91373943227E5D7800F59676 /* DelegationViewController.swift */; };
 		91373946227E61C200F59676 /* QRCodeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91373945227E61C200F59676 /* QRCodeUtil.swift */; };
@@ -102,6 +104,8 @@
 		912EE9A4229D5DA70094AF3A /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		912EE9AB229DF1590094AF3A /* BakingDetailHelp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BakingDetailHelp.storyboard; sourceTree = "<group>"; };
 		912EE9AD229DF16E0094AF3A /* BakingDetailHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingDetailHelpViewController.swift; sourceTree = "<group>"; };
+		912EE9AF229DF4C00094AF3A /* TwoRows.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoRows.xib; sourceTree = "<group>"; };
+		912EE9B1229DF4CC0094AF3A /* TwoRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoRows.swift; sourceTree = "<group>"; };
 		9135B90221D8A6820077ED46 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		91373943227E5D7800F59676 /* DelegationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationViewController.swift; sourceTree = "<group>"; };
 		91373945227E61C200F59676 /* QRCodeUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeUtil.swift; sourceTree = "<group>"; };
@@ -285,6 +289,8 @@
 				91373948227E65BF00F59676 /* SingleRow.xib */,
 				9137394A227E65CA00F59676 /* SingleRow.swift */,
 				9137394C227E65D800F59676 /* DesignableView.swift */,
+				912EE9AF229DF4C00094AF3A /* TwoRows.xib */,
+				912EE9B1229DF4CC0094AF3A /* TwoRows.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -457,6 +463,7 @@
 				912EE9AC229DF1590094AF3A /* BakingDetailHelp.storyboard in Resources */,
 				8539AD09219A54710027E6DB /* Home.storyboard in Resources */,
 				9187047F229508D50086A5FD /* BakingDetailSingleRowCell.xib in Resources */,
+				912EE9B0229DF4C00094AF3A /* TwoRows.xib in Resources */,
 				8539AD0E219A57490027E6DB /* Settings.storyboard in Resources */,
 				91870481229511010086A5FD /* BakingDetailTwoRowsCell.xib in Resources */,
 				911CB4D221DDDF8700725444 /* Colors.xcassets in Resources */,
@@ -651,6 +658,7 @@
 				914DC95A21E47D3400C5126B /* UIColor+Extension.swift in Sources */,
 				91373944227E5D7800F59676 /* DelegationViewController.swift in Sources */,
 				912EE9A5229D5DA70094AF3A /* Localizable.swift in Sources */,
+				912EE9B2229DF4CC0094AF3A /* TwoRows.swift in Sources */,
 				85070671219A236F0055BCAF /* EntranceViewController.swift in Sources */,
 				9135B90321D8A6820077ED46 /* DashboardViewModel.swift in Sources */,
 				9137394B227E65CA00F59676 /* SingleRow.swift in Sources */,

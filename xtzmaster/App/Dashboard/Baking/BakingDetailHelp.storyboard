@@ -20,21 +20,98 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRW-Le-NRG">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h78-lx-fGv" userLabel="Current Balance" customClass="TwoRows" customModule="xtzmaster" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="335" height="76"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUo-3N-E2w" userLabel="Current Cycle" customClass="TwoRows" customModule="xtzmaster" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="116" width="335" height="76"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UE5-Ts-64F" userLabel="To Next Reward" customClass="TwoRows" customModule="xtzmaster" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="212" width="335" height="76"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWS-HG-x9L" userLabel="With XTZMaster" customClass="TwoRows" customModule="xtzmaster" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="308" width="335" height="76"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VpT-Q1-xgQ" userLabel="Joined Cycle" customClass="TwoRows" customModule="xtzmaster" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="404" width="335" height="76"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqO-Y2-gJw" userLabel="Reward" customClass="TwoRows" customModule="xtzmaster" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="500" width="335" height="76"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P76-qm-f0D" userLabel="Fee Rate" customClass="TwoRows" customModule="xtzmaster" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="596" width="335" height="76"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqU-QN-ypb" userLabel="Unlocked Cycle" customClass="TwoRows" customModule="xtzmaster" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="692" width="335" height="76"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A97-zL-Z8P" userLabel="Balance By Cycle" customClass="TwoRows" customModule="xtzmaster" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="788" width="335" height="76"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4H-Ws-kAD" userLabel="Reward Paid-out" customClass="TwoRows" customModule="xtzmaster" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="884" width="335" height="76"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wWS-HG-x9L" secondAttribute="trailing" constant="20" id="2BZ-zd-SL1"/>
+                                    <constraint firstAttribute="trailing" secondItem="UE5-Ts-64F" secondAttribute="trailing" constant="20" id="2u1-rZ-1if"/>
+                                    <constraint firstItem="lqO-Y2-gJw" firstAttribute="leading" secondItem="fRW-Le-NRG" secondAttribute="leading" constant="20" id="3Bk-RU-KPd"/>
+                                    <constraint firstItem="h78-lx-fGv" firstAttribute="top" secondItem="fRW-Le-NRG" secondAttribute="top" constant="20" id="3lu-G8-3XN"/>
+                                    <constraint firstAttribute="trailing" secondItem="P76-qm-f0D" secondAttribute="trailing" constant="20" id="5K9-fx-fEV"/>
+                                    <constraint firstItem="P76-qm-f0D" firstAttribute="leading" secondItem="fRW-Le-NRG" secondAttribute="leading" constant="20" id="7Aj-jm-BjE"/>
+                                    <constraint firstItem="UE5-Ts-64F" firstAttribute="top" secondItem="vUo-3N-E2w" secondAttribute="bottom" constant="20" id="Cla-E8-JkY"/>
+                                    <constraint firstItem="d4H-Ws-kAD" firstAttribute="top" secondItem="A97-zL-Z8P" secondAttribute="bottom" constant="20" id="CnC-aZ-Fks"/>
+                                    <constraint firstItem="h78-lx-fGv" firstAttribute="leading" secondItem="fRW-Le-NRG" secondAttribute="leading" constant="20" id="Crf-aN-kkj"/>
+                                    <constraint firstItem="UE5-Ts-64F" firstAttribute="leading" secondItem="fRW-Le-NRG" secondAttribute="leading" constant="20" id="Fv6-4t-r3c"/>
+                                    <constraint firstAttribute="trailing" secondItem="EqU-QN-ypb" secondAttribute="trailing" constant="20" id="Gax-wo-EwR"/>
+                                    <constraint firstItem="vUo-3N-E2w" firstAttribute="leading" secondItem="fRW-Le-NRG" secondAttribute="leading" constant="20" id="GfD-xs-Etc"/>
+                                    <constraint firstItem="EqU-QN-ypb" firstAttribute="top" secondItem="P76-qm-f0D" secondAttribute="bottom" constant="20" id="GzQ-gN-mFR"/>
+                                    <constraint firstItem="lqO-Y2-gJw" firstAttribute="top" secondItem="VpT-Q1-xgQ" secondAttribute="bottom" constant="20" id="IEM-6i-2ul"/>
+                                    <constraint firstAttribute="trailing" secondItem="lqO-Y2-gJw" secondAttribute="trailing" constant="20" id="Kry-Xd-JJb"/>
+                                    <constraint firstAttribute="trailing" secondItem="A97-zL-Z8P" secondAttribute="trailing" constant="20" id="Mwg-fI-tZV"/>
+                                    <constraint firstItem="d4H-Ws-kAD" firstAttribute="leading" secondItem="fRW-Le-NRG" secondAttribute="leading" constant="20" id="YTK-Wr-CP6"/>
+                                    <constraint firstAttribute="trailing" secondItem="h78-lx-fGv" secondAttribute="trailing" constant="20" id="bR3-zZ-M4v"/>
+                                    <constraint firstAttribute="trailing" secondItem="d4H-Ws-kAD" secondAttribute="trailing" constant="20" id="cbo-Oq-oWD"/>
+                                    <constraint firstItem="VpT-Q1-xgQ" firstAttribute="leading" secondItem="fRW-Le-NRG" secondAttribute="leading" constant="20" id="ctp-PI-4mU"/>
+                                    <constraint firstItem="EqU-QN-ypb" firstAttribute="leading" secondItem="fRW-Le-NRG" secondAttribute="leading" constant="20" id="dEM-ls-MOZ"/>
+                                    <constraint firstItem="A97-zL-Z8P" firstAttribute="top" secondItem="EqU-QN-ypb" secondAttribute="bottom" constant="20" id="ekn-6c-Bcl"/>
+                                    <constraint firstItem="vUo-3N-E2w" firstAttribute="top" secondItem="h78-lx-fGv" secondAttribute="bottom" constant="20" id="g5T-IY-ccB"/>
+                                    <constraint firstItem="P76-qm-f0D" firstAttribute="top" secondItem="lqO-Y2-gJw" secondAttribute="bottom" constant="20" id="hOe-nx-maw"/>
+                                    <constraint firstAttribute="trailing" secondItem="VpT-Q1-xgQ" secondAttribute="trailing" constant="20" id="oaZ-U4-8of"/>
+                                    <constraint firstItem="VpT-Q1-xgQ" firstAttribute="top" secondItem="wWS-HG-x9L" secondAttribute="bottom" constant="20" id="v0g-wy-I7m"/>
+                                    <constraint firstItem="A97-zL-Z8P" firstAttribute="leading" secondItem="fRW-Le-NRG" secondAttribute="leading" constant="20" id="vYU-lz-3fD"/>
+                                    <constraint firstItem="wWS-HG-x9L" firstAttribute="leading" secondItem="fRW-Le-NRG" secondAttribute="leading" constant="20" id="xup-ET-peP"/>
+                                    <constraint firstAttribute="trailing" secondItem="vUo-3N-E2w" secondAttribute="trailing" constant="20" id="yNE-rx-SPT"/>
+                                    <constraint firstItem="wWS-HG-x9L" firstAttribute="top" secondItem="UE5-Ts-64F" secondAttribute="bottom" constant="20" id="z9Y-St-bSb"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fRW-Le-NRG" firstAttribute="top" secondItem="UZp-1t-wvq" secondAttribute="top" id="AgF-zg-h7x"/>
                             <constraint firstItem="UZp-1t-wvq" firstAttribute="trailing" secondItem="fRW-Le-NRG" secondAttribute="trailing" id="ER7-ki-HwQ"/>
+                            <constraint firstItem="fRW-Le-NRG" firstAttribute="bottom" secondItem="d4H-Ws-kAD" secondAttribute="bottom" constant="20" id="FsG-Rz-r0m"/>
+                            <constraint firstItem="UZp-1t-wvq" firstAttribute="trailing" secondItem="h78-lx-fGv" secondAttribute="trailing" constant="20" id="HQT-Ya-c7n"/>
                             <constraint firstItem="fRW-Le-NRG" firstAttribute="leading" secondItem="UZp-1t-wvq" secondAttribute="leading" id="c0c-kw-6f2"/>
                             <constraint firstItem="UZp-1t-wvq" firstAttribute="bottom" secondItem="fRW-Le-NRG" secondAttribute="bottom" id="jf9-rQ-EPj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UZp-1t-wvq"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohn-eV-b66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="228" y="146"/>
+            <point key="canvasLocation" x="228" y="145.27736131934034"/>
         </scene>
     </scenes>
 </document>
