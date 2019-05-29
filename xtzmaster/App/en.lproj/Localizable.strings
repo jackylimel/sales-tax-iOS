@@ -20,14 +20,27 @@
 "To Next Reward" = "To Next Reward";
 "With XTZMaster" = "With XTZMaster";
 "Joined Cycle" = "Joined Cycle";
+"Reward" = "Reward";
 "Fee Rate" = "Fee Rate";
 "Unlocked Cycle" = "Unlocked Cycle";
 "Balance By Cycle" = "Balance By Cycle %@";
-"Reward paid" = "Reward paid";
-"Verify" = "Verify";
+"Reward paid" = "Reward paid-out?";
+"Verify" = "Click To Verify";
 "Delegation Account" = "Delegation Account";
 "Manager Account" = "Manager Account";
 "Help" = "Help";
+
+// Help
+"Current Balance Help" = "Current balance in your delegation account (dispatched reward inclusive)";
+"Current Cycle Help" = "Current cycle in Tezos";
+"To Next Reward Help" = "Your estimated upcoming reward payout date";
+"With XTZMaster Help" = "Days you have delegated to XTZMaster";
+"Joined Cycle Help" = "The cycle you started delegating to XTZMaster";
+"Reward Help" = "Your reward to receive from XTZMaster in current cycle, either pending pay out or paid out";
+"Fee Rate Help" = "Based on our fee structure, you may be eligible for Basic Rate, Power Rate or VIP Rate";
+"Unlocked Cycle Help" = "Your reward is unlocked for this cycle";
+"Balance By Cycle Help" = "Your balance at the time the reward was generated";
+"Reward paid Help" = "Whether the reward has been paid to the delegator";
 
 // Settings
 "Email" = "Email";

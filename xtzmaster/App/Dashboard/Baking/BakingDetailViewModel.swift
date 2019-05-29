@@ -13,10 +13,11 @@ class BakingDetailViewModel {
         let daysToNextReward = BakingDetailCellViewModel(title: R.string.localizable.toNextReward(), value: DataStore.shared.account?.getTimeToNextReward() ?? "0 days 0 hours", url: nil)
         let daysWith = BakingDetailCellViewModel(title: R.string.localizable.withXTZMaster(), value: delegator.daysWithXTZMaster(), url: nil)
         let joinedCycle = BakingDetailCellViewModel(title: R.string.localizable.joinedCycle(), value: String(delegator.joinedCycle), url: nil)
+        let reward = BakingDetailCellViewModel(title: R.string.localizable.reward(), value: rewardSplit.rewards, url: nil)
         let feeRate = BakingDetailCellViewModel(title: R.string.localizable.feeRate(), value: rewardSplit.feeRatePercent, url: nil)
         let unlockedCycle = BakingDetailCellViewModel(title: R.string.localizable.unlockedCycle(), value: String(rewardSplit.cycle), url: nil)
         let balanceByUnlockedCycle = BakingDetailCellViewModel(title: R.string.localizable.balanceByCycle(rewardSplit.cycle), value: String(rewardSplit.balance), url: nil)
-        var singleRowViewModels = [currentBalance, currentCycle, daysToNextReward, daysWith, joinedCycle, feeRate, unlockedCycle, balanceByUnlockedCycle]
+        var singleRowViewModels = [currentBalance, currentCycle, daysToNextReward, daysWith, joinedCycle, reward, feeRate, unlockedCycle, balanceByUnlockedCycle]
         if (rewardSplit.paid) {
           singleRowViewModels.append(BakingDetailCellViewModel(title: R.string.localizable.rewardPaid(), value: R.string.localizable.verify(), url: URL(string: "https://tzscan.io/\(rewardSplit.paidReference)")))
         }

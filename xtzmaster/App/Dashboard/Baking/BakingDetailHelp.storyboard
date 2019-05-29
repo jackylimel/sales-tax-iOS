@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="9kq-3j-7jB" customClass="BakingDetailHelpViewController" customModule="xtzmaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b1N-tc-IhG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1020"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRW-Le-NRG">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h78-lx-fGv" userLabel="Current Balance" customClass="TwoRows" customModule="xtzmaster" customModuleProvider="target">
                                         <rect key="frame" x="20" y="20" width="335" height="76"/>
@@ -108,6 +108,19 @@
                         <viewLayoutGuide key="safeArea" id="UZp-1t-wvq"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1020"/>
+                    <connections>
+                        <outlet property="balanceByCycleCell" destination="A97-zL-Z8P" id="Fdd-82-mQZ"/>
+                        <outlet property="currentBalanceCell" destination="h78-lx-fGv" id="F7p-Jw-Cqv"/>
+                        <outlet property="currentCycleCell" destination="vUo-3N-E2w" id="PKQ-T0-WFd"/>
+                        <outlet property="feeRateCell" destination="P76-qm-f0D" id="4PT-Ss-b7k"/>
+                        <outlet property="joinedCycleCell" destination="VpT-Q1-xgQ" id="8pR-iV-vmM"/>
+                        <outlet property="rewardCell" destination="lqO-Y2-gJw" id="1zg-wp-YwH"/>
+                        <outlet property="rewardPaidOutCell" destination="d4H-Ws-kAD" id="Flx-SO-GPV"/>
+                        <outlet property="toNextRewardCell" destination="UE5-Ts-64F" id="gaO-sj-JLy"/>
+                        <outlet property="unlockedCycleCell" destination="EqU-QN-ypb" id="lsK-jB-w8y"/>
+                        <outlet property="withXTZMasterCell" destination="wWS-HG-x9L" id="W7m-4g-gsM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohn-eV-b66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

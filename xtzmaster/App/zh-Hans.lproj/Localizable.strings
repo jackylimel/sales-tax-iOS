@@ -20,15 +20,28 @@
 "To Next Reward" = "下次收益到达时间";
 "With XTZMaster" = "烘焙天数";
 "Joined Cycle" = "委托周期";
+"Reward" = "收益";
 "Fee Rate" = "手续费率";
 "Unlocked Cycle" = "解冻周期";
 "Balance By Cycle" = "解冻周期账户余额 %@";
-"Reward paid" = "收益已分发";
-"Verify" = "验证";
+"Reward paid" = "收益已分发?";
+"Verify" = "点击验证";
 "Delegation Account" = "委托账户";
 "Manager Account" = "Manager账户";
 
 "Help" = "帮助";
+
+// Help
+"Current Balance Help" = "您委托账户内当前余额（含已分发收益）";
+"Current Cycle Help" = "当前的tezos周期";
+"To Next Reward Help" = "您的下一次收益预期到达时间";
+"With XTZMaster Help" = "您委托给XTZMaster已经达到的天数";
+"Joined Cycle Help" = "您委托给XTZMaster开始的周期";
+"Reward Help" = "您在本周期内将获得的收益，待分发或已分发完毕";
+"Fee Rate Help" = "根据我们的委托条款，您可享受到基本费率、荣誉费率或VIP费率";
+"Unlocked Cycle Help" = "您的收益由解冻周期收益产生";
+"Balance By Cycle Help" = "您在收益产生的时刻账户内的余额";
+"Reward paid Help" = "本期收益是否已分发";
 
 // Settings
 "Email" = "邮件";
